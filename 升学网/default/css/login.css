@@ -1,0 +1,68 @@
+@charset "utf-8";
+/* ************************************ 
+* 文件名称：login.css 
+* 作    者：于柳
+* 创建日期：2013-08-09
+* 最后修改：于柳/ 创建 / 2013-08-09 
+* 文件版本：1.0 义
+* 说    明: login,index_mian
+************************************ */
+/**********************Login******************************/
+.sxwBox{width:100%;overflow:hidden;padding:20px 0;}
+/***header****/
+.sxw_hBox,swx_conbj{padding-bottom:20px;}
+.sxw_hBox,.sxw_cBox,.sxw_bottom,.index_Cont{overflow:hidden;width:980px;margin:0 auto;}
+.swx_logo{float:left;display:inline;}
+.swx_conRh{float:right;display:inline;margin-top:30px;line-height: 16px;}
+.swx_conRh a{background:url(../images/but.gif) no-repeat scroll 0 0;display:inline-block;vertical-align: middle;margin-left: 40px;}
+.swx_conRh .faq,.swx_conRh .khfw,.swx_conRh .lxwm,.swx_conRh .help{padding: 0 0 0 20px;height:16px;}
+.swx_conRh .faq{background-position:0 -32px;}
+.swx_conRh .khfw{background-position:0 -48px;}
+.swx_conRh .lxwm{background-position:0 -16px;}
+.swx_conRh .help{background-position:0 0;}
+/****content*****/
+.sxw_conbj{background:url(../images/con_bj.jpg) repeat scroll 0 0;height:500px;border-top:solid 2px #092f4b;border-bottom:solid 2px #032a47;margin-bottom:20px;}
+.sxw_cBox{background:url(../images/con_bj1.jpg) no-repeat scroll 0 0;height:500px;}
+/*login*/
+.sxw_log{float:right;display:inline;background:url(../images/login_bj1.png) no-repeat scroll 0 0;_background:url(../images/login_bj1.gif) no-repeat scroll 0 0;width:383px;_width:358px;height:473px;_height:449px;}
+.sxw_log dl{width:292px;margin:20px auto 0 auto;}
+.sxw_log dl dt{font:24px/46px "Microsoft YaHei";color:#fff;border-bottom:solid 1px #fff;margin-bottom: 25px;overflow:hidden;}
+.sxw_log p.line{height:1px;background:#013d1f;display:block;overflow:hidden;}
+.sxw_log dl dd{margin:5px 0;overflow:hidden;}
+.log_input{background:url(../images/but1.png) no-repeat scroll 0 -54px;_background:url(../images/but1.gif) no-repeat scroll 0 -54px;width:260px;height:42px;display:block;border:none;;font:14px/42px "Microsoft YaHei";color:#999;padding-left:10px;}
+.sxw_log dl dd p{color:#fff;padding-left:10px;clear:both;height:20px;line-height:20px;}
+.log_yanz{background:url(../images/but1.png) no-repeat scroll 0 -106px;_background:url(../images/but1.gif) no-repeat scroll 0 -106px;float:left;display:inline;width:120px;}
+.img_yanz{width:115px;height:40px;float:left;display:inline;margin-left:25px;cursor:pointer;}
+.but_log{background:url(../images/but1.png) no-repeat scroll 0 0;width:270px;height:40px;font:20px/40px "Microsoft YaHei";color:#fff;text-align:center;display:block;}
+.log_tishi{color:#fff;font:14px "Microsoft YaHei";text-align:center;padding-top:10px;}
+.log_tishi a{color:#fff;}
+/***footer***/
+.sxw_bottom{text-align:center;}
+/**********************Index_main**********************************/
+.loginBar,.iCon_mBox{overflow:hidden;line-height:35px;}
+.loginBar a{float:right;display:inline;color:#0C517F;}
+.iCon_mBox ul li{float:left;display:inline;margin:0 20px 20px 0;}
+.iCon_mBox ul li a{background:url(../images/index_main-but.png) no-repeat scroll 0 0;display:block;height:160px;position:relative;}
+.iCon_mBox ul li a em{position:absolute;bottom:5px;left:15px;font:16px "Microsoft YaHei";color:#fff;}
+.iCon_mBox ul li a.wdkb:hover,.iCon_mBox ul li a.wdkc:hover,.iCon_mBox ul li a.wdkj:hover,.iCon_mBox ul li a.wdbj:hover,.iCon_mBox ul li a.ksgl:hover,.iCon_mBox ul li a.ksap:hover,.iCon_mBox ul li a.zygl:hover,.iCon_mBox ul li a.zybz:hover,.iCon_mBox ul li a.xsgl:hover{_text-decoration:none;}
+.iCon_mBox ul li a.wdkc,.iCon_mBox ul li a.wdkj,.iCon_mBox ul li a.wdbj,.iCon_mBox ul li a.ksap,.iCon_mBox ul li a.zygl,.iCon_mBox ul li a.zybz{width:230px;}
+.iCon_mBox ul li a.wdkb,.iCon_mBox ul li a.ksgl,.iCon_mBox ul li a.xsgl{width:480px;}
+.iCon_mBox ul li a.wdkb{background-position:0 0;}
+.iCon_mBox ul li a.wdkb:hover{background-position:0 -171px;}
+.iCon_mBox ul li a.wdkc{background-position:0 -341px;}
+.iCon_mBox ul li a.wdkc:hover{background-position:0 -511px;}
+.iCon_mBox ul li a.wdkj{background-position:0 -680px;}
+.iCon_mBox ul li a.wdkj:hover{background-position:0 -850px;}
+.iCon_mBox ul li a.wdbj{background-position:0 -1700px;}
+.iCon_mBox ul li a.wdbj:hover{background-position:0 -1870px;}
+.iCon_mBox ul li a.ksgl{background-position:0 -1360px;}
+.iCon_mBox ul li a.ksgl:hover{background-position:0 -1530px;}
+.iCon_mBox ul li a.ksap{background-position:0 -1020px;}
+.iCon_mBox ul li a.ksap:hover{background-position:0 -1190px;}
+.iCon_mBox ul li a.zygl{background-position:0 -2041px;}
+.iCon_mBox ul li a.zygl:hover{background-position:0 -2211px;}
+.iCon_mBox ul li a.zybz{background-position:0 -2381px;}
+.iCon_mBox ul li a.zybz:hover{background-position:0 -2551px;}
+.iCon_mBox ul li a.xsgl{background-position:0 -2721px;}
+.iCon_mBox ul li a.xsgl:hover{background-position:0 -2891px;}
+.iCon_mBox ul li.noSmty{margin:0 0 20px 0;}

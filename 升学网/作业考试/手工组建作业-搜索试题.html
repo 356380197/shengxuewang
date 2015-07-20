@@ -1,0 +1,437 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>教师端教学系统-搜索试题</title>
+<link href="../default/css/trcss.css" rel="stylesheet" type="text/css" />
+<link href="../default/css/style.css" rel="stylesheet" type="text/css" />
+<script language="javascript" src="../default/js/jquery-1.3.1.js"></script>
+<script language="javascript" src="../default/js/my.js"></script>
+</head>
+<body class="b1">
+<!--head start-->
+    <iframe src="../head.html" frameborder="0" width="100%" height="151px" style="display:none"></iframe>
+    <!--head end-->
+<span class="ssgz">试卷组建实时跟踪</span>
+<div class="browseTitle">手工组建试卷 - 英语完形填空专项测试（3）</div>
+<div class="teCbox">
+	<h1><img src="../default/images/mutual/ico_tit.gif"><a href="组卷新试卷.html" title="组卷新试卷">组卷新试卷</a>&nbsp;&gt;&nbsp;<a href="手动组建试卷.html">手动组建试卷</a>&nbsp;&gt;&nbsp;搜索试题</h1>
+  <div class="clear"></div>
+  <div class="stepDiv">
+    <p class="stepP"><span class="sSl"></span><span class="sSc">1、参数设置 </span><span class="sSr2"></span></p>
+    <p class="stepP2"><span class="sSl">&nbsp;&nbsp;&nbsp;&nbsp;2、生成试卷内容</span><span class="sSr"></span></p>
+    <p class="stepP1" style="z-index:2"><span class="sSl">&nbsp;&nbsp;&nbsp;&nbsp;3、试卷内容调整</span><span class="sSr"></span></p>
+    <p class="stepP1" style="z-index:1"><span class="sSl2">&nbsp;&nbsp;&nbsp;&nbsp;4、试卷内容保存</span><span class="sSr2"></span></p>
+  </div>
+  <div class="browseCnt" id="gzdiv">
+    <div class="browseCnht">试卷组建实时跟踪</div>
+    <div class="inforSt"> <span class="inforStSpan">当前试卷题型的题量分布</span>
+      <p class="inforStP"><img src="../default/images/1.png" width="277" height="160" /></p>
+    </div>
+    <div class="inforSt"> <span class="inforStSpan">当前试卷题型的题量分布</span>
+      <p class="inforStP"><img src="../default/images/2.png" width="277" height="160" /></p>
+    </div>
+    <div class="inforSt" style="margin-right:0px;"> <span class="inforStSpan">当前题型的知识点题量分布</span>
+      <p class="inforStP"><img src="../default/images/3.png" width="277" height="160" /></p>
+    </div>
+    <div class="inforSt2"> <span class="inforSt2Span">当前试卷难度控制</span>
+      <p class="inforSt2P"><img src="../default/images/4.png" width="342" height="48" /></p>
+    </div>
+    <div class="inforSt2"> <span class="inforSt2Span">当前试卷难度控制</span>
+      <p class="inforSt2P"><img src="../default/images/5.png" width="342" height="48" /></p>
+    </div>
+    <div class="inforBtn" style="display:none"><span class="btnSpan" style="margin:0 auto; float:none; ">回复原位</span></div>
+    <div class="clear"></div>
+  </div>
+  <div class="sszy">搜索资源:&nbsp;&nbsp;&nbsp;
+    <input name="" type="radio" value="" />
+    搜索试题资源&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input name="" type="radio" value="" />
+    搜索试卷资源&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input name="" type="radio" value="" />
+    搜索作业资源 </div>
+  <div class="browseCnt">
+    <div class="browCntC">
+      <div class="browCntCt"><span class="bCtspanno" onclick="switchmodTag('bCtspan','browCntCc',0,4)" id="bCtspan0">个人试卷</span><span class="bCtspanno" onclick="switchmodTag('bCtspan','browCntCc',1,4)" id="bCtspan1">精选试卷</span><span class="bCtspanno"  onclick="switchmodTag('bCtspan','browCntCc',2,4)" id="bCtspan2">水平诊断卷</span><span class="bCtspanok" id="bCtspan3" onclick="switchmodTag('bCtspan','browCntCc',3,4)">聚智卷库</span></div>
+      <div class="browCntCcno" id="browCntCc0">
+        <p class="trSearch"> <span class="trSc">
+          <label class="trSt">1学习领域：</label>
+          <select name="" class="trselect">
+            <option>请选择学习领域</option>
+          </select>
+          </span> <span class="trSc">
+          <label class="trSt">学科：</label>
+          <select name="" class="trselect">
+            <option>请选择学科</option>
+          </select>
+          </span> <span class="trSc">
+          <label class="trSt">学段：</label>
+          <select name="" class="trselect">
+            <option>请选择学段</option>
+          </select>
+          </span></p>
+        <p class="trSearch">
+          <label class="trSt">所属教材版本：</label>
+          <input name="" type="radio" value="" />
+          聚智未来&nbsp;&nbsp;&nbsp;
+          <input name="" type="radio" value="" />
+          人教&nbsp;&nbsp;&nbsp;
+          <input name="" type="radio" value="" />
+          外研&nbsp;&nbsp;&nbsp;
+          <input name="" type="radio" value="" />
+          沪科&nbsp;&nbsp;&nbsp;
+          <input name="" type="radio" value="" />
+          湘教&nbsp;&nbsp;&nbsp;</p>
+          <p class="trSearch"><span class="trSc">
+          <label class="trSt">适用年级：</label>
+          <select name="" class="trselect">
+            <option>请选择适用年级</option>
+          </select>
+          </span> <span class="trSc">
+          <label class="trSt">适用课程：</label>
+          <select name="" class="trselect">
+            <option>请选择适用课程</option>
+          </select>
+          </span></p>
+        <p class="trSearch textC">
+          <input name="" type="button" class="ssBtn" value="搜　索" />
+        </p>
+        <div class="browCntC3">
+        <table class="trTable" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <th><input name="" type="checkbox" value="" />
+              全选</th>
+            <th>题号</th>
+            <th>题干</th>
+            <th>题型</th>
+            <th>试题难度</th>
+            <th>知识考查要求</th>
+            <th>学科能力要求</th>
+            <th>组卷次数</th>
+            <th>个人最新组卷时间</th>
+          </tr>
+          <tr>
+            <td><input name="" type="checkbox" value="" /></td>
+            <td>1</td>
+            <td class="trW"><a href="#">数组标准测试试卷</a></td>
+            <td>理科试卷</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td align="center">2013-09-06 10:30</td>
+          </tr>
+        </table>
+        <div class="jwcPage"><span class="jpl">共有&nbsp;
+          <label class="red">50</label>
+          &nbsp;条数据，当前第&nbsp;
+          <label class="red">1</label>
+          &nbsp;页</span><span class="jpr">
+          <label>共&nbsp;5&nbsp;页&nbsp;&nbsp;&nbsp;</label>
+          <a href="#" class="jprw">首页</a><a href="#" class="jprw">上一页</a><a href="#" class="jprsok">1</a><a href="#" class="jprs">2</a><a href="#" class="jprs">3</a><a href="#" class="jprw">下一页</a><a href="#" class="jprw">尾页</a>
+          <label>跳转</label>
+          <input name="" type="text" class="jpinp" />
+          <input name="" type="button" value="GO" class="jpgo" />
+          </span></div>
+    </div>
+        <div class="clear"></div>
+      </div>
+      <div class="browCntCcno" id="browCntCc1">
+        <p class="trSearch"> <span class="trSc">
+          <label class="trSt">2学习领域：</label>
+          <select name="" class="trselect">
+            <option>请选择学习领域</option>
+          </select>
+          </span> <span class="trSc">
+          <label class="trSt">学科：</label>
+          <select name="" class="trselect">
+            <option>请选择学科</option>
+          </select>
+          </span> <span class="trSc">
+          <label class="trSt">学段：</label>
+          <select name="" class="trselect">
+            <option>请选择学段</option>
+          </select>
+          </span></p>
+        <p class="trSearch">
+          <label class="trSt">所属教材版本：</label>
+          <input name="" type="radio" value="" />
+          聚智未来&nbsp;&nbsp;&nbsp;
+          <input name="" type="radio" value="" />
+          人教&nbsp;&nbsp;&nbsp;
+          <input name="" type="radio" value="" />
+          外研&nbsp;&nbsp;&nbsp;
+          <input name="" type="radio" value="" />
+          沪科&nbsp;&nbsp;&nbsp;
+          <input name="" type="radio" value="" />
+          湘教&nbsp;&nbsp;&nbsp;</p>
+          <p class="trSearch"><span class="trSc">
+          <label class="trSt">适用年级：</label>
+          <select name="" class="trselect">
+            <option>请选择适用年级</option>
+          </select>
+          </span> <span class="trSc">
+          <label class="trSt">适用课程：</label>
+          <select name="" class="trselect">
+            <option>请选择适用课程</option>
+          </select>
+          </span></p>
+        <p class="trSearch textC">
+          <input name="" type="button" class="ssBtn" value="搜　索" />
+        </p>
+        <div class="browCntC3">
+        <table class="trTable" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <th><input name="" type="checkbox" value="" />
+              全选</th>
+            <th>题号</th>
+            <th>题干</th>
+            <th>题型</th>
+            <th>试题难度</th>
+            <th>知识考查要求</th>
+            <th>学科能力要求</th>
+            <th>组卷次数</th>
+            <th>个人最新组卷时间</th>
+          </tr>
+          <tr>
+            <td><input name="" type="checkbox" value="" /></td>
+            <td>1</td>
+            <td class="trW"><a href="#">数组标准测试试卷</a></td>
+            <td>理科试卷</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td align="center">2013-09-06 10:30</td>
+          </tr>
+        </table>
+        <div class="jwcPage"><span class="jpl">共有&nbsp;
+          <label class="red">50</label>
+          &nbsp;条数据，当前第&nbsp;
+          <label class="red">1</label>
+          &nbsp;页</span><span class="jpr">
+          <label>共&nbsp;5&nbsp;页&nbsp;&nbsp;&nbsp;</label>
+          <a href="#" class="jprw">首页</a><a href="#" class="jprw">上一页</a><a href="#" class="jprsok">1</a><a href="#" class="jprs">2</a><a href="#" class="jprs">3</a><a href="#" class="jprw">下一页</a><a href="#" class="jprw">尾页</a>
+          <label>跳转</label>
+          <input name="" type="text" class="jpinp" />
+          <input name="" type="button" value="GO" class="jpgo" />
+          </span></div>
+    </div>
+        <div class="clear"></div>
+      </div>
+      <div class="browCntCcno" id="browCntCc2">
+        <p class="trSearch"> <span class="trSc">
+          <label class="trSt">3学习领域：</label>
+          <select name="" class="trselect">
+            <option>请选择学习领域</option>
+          </select>
+          </span> <span class="trSc">
+          <label class="trSt">学科：</label>
+          <select name="" class="trselect">
+            <option>请选择学科</option>
+          </select>
+          </span> <span class="trSc">
+          <label class="trSt">学段：</label>
+          <select name="" class="trselect">
+            <option>请选择学段</option>
+          </select>
+          </span></p>
+        <p class="trSearch">
+          <label class="trSt">所属教材版本：</label>
+          <input name="" type="radio" value="" />
+          聚智未来&nbsp;&nbsp;&nbsp;
+          <input name="" type="radio" value="" />
+          人教&nbsp;&nbsp;&nbsp;
+          <input name="" type="radio" value="" />
+          外研&nbsp;&nbsp;&nbsp;
+          <input name="" type="radio" value="" />
+          沪科&nbsp;&nbsp;&nbsp;
+          <input name="" type="radio" value="" />
+          湘教&nbsp;&nbsp;&nbsp;</p>
+          <p class="trSearch"><span class="trSc">
+          <label class="trSt">适用年级：</label>
+          <select name="" class="trselect">
+            <option>请选择适用年级</option>
+          </select>
+          </span> <span class="trSc">
+          <label class="trSt">适用课程：</label>
+          <select name="" class="trselect">
+            <option>请选择适用课程</option>
+          </select>
+          </span></p>
+        <p class="trSearch textC">
+          <input name="" type="button" class="ssBtn" value="搜　索" />
+        </p>
+        <div class="browCntC3">
+        <table class="trTable" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <th><input name="" type="checkbox" value="" />
+              全选</th>
+            <th>题号</th>
+            <th>题干</th>
+            <th>题型</th>
+            <th>试题难度</th>
+            <th>知识考查要求</th>
+            <th>学科能力要求</th>
+            <th>组卷次数</th>
+            <th>个人最新组卷时间</th>
+          </tr>
+          <tr>
+            <td><input name="" type="checkbox" value="" /></td>
+            <td>1</td>
+            <td class="trW"><a href="#">数组标准测试试卷</a></td>
+            <td>理科试卷</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td align="center">2013-09-06 10:30</td>
+          </tr>
+        </table>
+        <div class="jwcPage"><span class="jpl">共有&nbsp;
+          <label class="red">50</label>
+          &nbsp;条数据，当前第&nbsp;
+          <label class="red">1</label>
+          &nbsp;页</span><span class="jpr">
+          <label>共&nbsp;5&nbsp;页&nbsp;&nbsp;&nbsp;</label>
+          <a href="#" class="jprw">首页</a><a href="#" class="jprw">上一页</a><a href="#" class="jprsok">1</a><a href="#" class="jprs">2</a><a href="#" class="jprs">3</a><a href="#" class="jprw">下一页</a><a href="#" class="jprw">尾页</a>
+          <label>跳转</label>
+          <input name="" type="text" class="jpinp" />
+          <input name="" type="button" value="GO" class="jpgo" />
+          </span></div>
+      <div class="clear"></div>
+    </div>
+        <div class="clear"></div>
+      </div>
+      <div class="browCntCcok" id="browCntCc3">
+        <p class="trSearch"> <span class="trSc">
+          <label class="trSt">4学习领域：</label>
+          <select name="" class="trselect">
+            <option>请选择学习领域</option>
+          </select>
+          </span> <span class="trSc">
+          <label class="trSt">学科：</label>
+          <select name="" class="trselect">
+            <option>请选择学科</option>
+          </select>
+          </span> <span class="trSc">
+          <label class="trSt">学段：</label>
+          <select name="" class="trselect">
+            <option>请选择学段</option>
+          </select>
+          </span></p>
+        <p class="trSearch">
+          <label class="trSt">所在资源库：</label>
+          <input name="" type="radio" value="" />
+          聚智未来共享资源库&nbsp;&nbsp;&nbsp;
+          <input name="" type="radio" value="" />
+          聚智未来VIP资源库&nbsp;&nbsp;&nbsp;</p>
+        <p class="trSearch">
+          <label class="trSt">所属教材版本：</label>
+          <input name="" type="radio" value="" />
+          聚智未来&nbsp;&nbsp;&nbsp;
+          <input name="" type="radio" value="" />
+          人教&nbsp;&nbsp;&nbsp;
+          <input name="" type="radio" value="" />
+          外研&nbsp;&nbsp;&nbsp;
+          <input name="" type="radio" value="" />
+          沪科&nbsp;&nbsp;&nbsp;
+          <input name="" type="radio" value="" />
+          湘教&nbsp;&nbsp;&nbsp;</p>
+        <p class="trSearch textC">
+          <input name="" type="button" class="ssBtn" value="搜　索" />
+        </p>
+        <div class="browCntC2">
+      <div class="treeDiv"><img src="../default/images/6.png" width="159" height="387" /></div>
+      <div class="bcntCnt">
+        <div class="trSearch">
+          <label class="trSt">试题来源：</label>
+          <p class="trSP"><span class="trSPspan"><input name="" type="checkbox" value="" />
+          不限</span><span class="trSPspan"><input name="" type="checkbox" value="" />
+          高考真题</span><span class="trSPspan"><input name="" type="checkbox" value="" />
+          高考模拟</span><span class="trSPspan"><input name="" type="checkbox" value="" />
+          期中期末</span><span class="trSPspan"><input name="" type="checkbox" value="" />
+          月考试卷</span><span class="trSPspan"><input name="" type="checkbox" value="" />
+          其他</span></p></div>
+        <div class="trSearch">
+          <label class="trSt">试题类型：</label>
+          <p class="trSP"><span class="trSPspan"><input name="" type="checkbox" value="" />
+          不限</span><span class="trSPspan"><input name="" type="checkbox" value="" />
+          选择题</span><span class="trSPspan"><input name="" type="checkbox" value="" />
+          填空题</span></p></div>
+        <div class="trSearch">
+          <label class="trSt">试题难度：</label>
+          <p class="trSP"><span class="trSPspan"><input name="" type="checkbox" value="" />
+          不限</span><span class="trSPspan"><input name="" type="checkbox" value="" />
+          易</span><span class="trSPspan"><input name="" type="checkbox" value="" />
+          较易</span><span class="trSPspan"><input name="" type="checkbox" value="" />
+          中等</span><span class="trSPspan"><input name="" type="checkbox" value="" />
+          较难</span><span class="trSPspan"><input name="" type="checkbox" value="" />
+          难</span></p>
+        <p class="trSearch">
+          <label class="trSt">关键词搜索：</label>
+          <input name="" type="text" class="trSinput" />
+        </p>
+        <p class="trSearch tc">
+          <input name="" type="button" class="trbtn jzbtn" value="搜 索" />
+        </p>
+        <table class="trTable" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <th><input name="" type="checkbox" value="" />
+              全选</th>
+            <th>题号</th>
+            <th>题干</th>
+            <th>题型</th>
+            <th>试题难度</th>
+            <th>知识考查要求</th>
+            <th>学科能力要求</th>
+            <th>组卷次数</th>
+            <th>个人最新组卷时间</th>
+          </tr>
+          <tr>
+            <td><input name="" type="checkbox" value="" /></td>
+            <td>1</td>
+            <td class="trW"><a href="#">数组标准测试试卷</a></td>
+            <td>理科试卷</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td align="center">2013-09-06 10:30</td>
+          </tr>
+        </table>
+        <div class="listbD">
+          <input name="" type="button" class="trbtn" value="加入试卷" style=" margin-left:0px;" />
+        </div>
+        <div class="jwcPage"><span class="jpl">共有&nbsp;
+          <label class="red">50</label>
+          &nbsp;条数据，当前第&nbsp;
+          <label class="red">1</label>
+          &nbsp;页</span><span class="jpr">
+          <label>共&nbsp;5&nbsp;页&nbsp;&nbsp;&nbsp;</label>
+          <a href="#" class="jprw">首页</a><a href="#" class="jprw">上一页</a><a href="#" class="jprsok">1</a><a href="#" class="jprs">2</a><a href="#" class="jprs">3</a><a href="#" class="jprw">下一页</a><a href="#" class="jprw">尾页</a>
+          <label>跳转</label>
+          <input name="" type="text" class="jpinp" />
+          <input name="" type="button" value="GO" class="jpgo" />
+          </span></div>
+        <div class="sjCnt">38．如图21所示电路，电源两端电压U保持不变，闭合开关S1，断开开关S2，调节滑动变阻器R2的滑片P使其接入电路的电阻值为其最大值的一半，电压表V1的示数为U1，
+          电流表的示数I1为0.2A；再调节滑动变阻器R2滑片P至B端，电压表V2的示数为U2，此时电路消耗的总功率为2W；闭合开关S1、S2，电流表的示数I2为0.5A。
+          已知U1:U2=6:5，忽略温度对灯丝电阻的影响。求 ：
+          （1）电压U2:U；
+          （2）滑动变阻器的最大阻值R2。</div>
+      </div>
+    </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </div>
+  <div class="btnDiv"><a class="btnSpan" href="newTestPaper.html">暂存试卷</a><span class="btnSpan2 right" href="#">试卷调整</span>
+        <div class="clear"></div>
+      </div>
+</div>
+</div>
+<!--footer start-->
+    <iframe src="../footer.html" frameborder="0" width="100%" height="150px"></iframe>
+    <!--footer end-->
+</body>
+</html>

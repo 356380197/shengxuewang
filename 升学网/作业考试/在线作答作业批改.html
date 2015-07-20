@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>教师端教学系统-在线作答作业批改</title>
+<link href="../default/css/trcss.css" rel="stylesheet" type="text/css" />
+<link href="../default/css/style.css" rel="stylesheet" type="text/css" />
+<link href="../default/css/popup.css" rel="stylesheet" type="text/css" />
+<script language="javascript" src="../default/js/jquery-1.3.1.js"></script>
+<script language="javascript" src="../default/js/my.js"></script>
+</head>
+<body class="b1">
+<!--head start-->
+    <iframe src="../head.html" frameborder="0" width="100%" height="151px"></iframe>
+    <!--head end-->
+<div class="teCbox">
+ <h1><img src="../default/images/mutual/ico_tit.gif"><a href="作业布置与批改.html">作业布置与批改</a>&nbsp;&gt;&nbsp;<a href="作业批改.html">作业批改</a>&nbsp;&gt;&nbsp;在线作答作业批改</h1>
+<div class="tMainBox">
+  <!--left start-->
+   <div class="trcntl">
+		<ol>
+			<li>
+				<a href="试卷管理.html" class="trcntla" title="试卷管理">试卷管理</a>
+				<div class="lineb"></div>
+			</li>
+			<li>
+				<a href="考试安排.html" class=" trcntla" title="考试安排与批改">考试安排与批改</a>
+				<div class="lineb"></div>
+			</li>
+			<li>
+				<a href="作业管理.html" class=" trcntla" title="作业管理">作业管理</a>
+				<div class="lineb"></div>
+			</li>
+			<li>
+				<a href="作业布置与批改.html" class="traOk trcntla" title="作业布置与批改">作业布置与批改</a>
+				
+			</li>
+		</ol>
+	</div>
+	<!--left end-->
+  <div class="trcntr">
+    <div class="trSearch">
+      <label class="trSt">班级：</label>
+      <p class="trSP"><span class="trSPspan_a" id="m_1">
+            <input name="" type="checkbox" value="" />
+            <label class="bjl">辅导1班</label></span> <span class="trSPspan" id="m_2" onmouseover='mover(2);' onmouseout='mout(2);'>
+            <input name="" type="checkbox" value="" />
+            <label class="bjl">辅导2班</label></span> <span class="trSPspan" id="m_3" onmouseover='mover(3);' onmouseout='mout(3);'>
+            <input name="" type="checkbox" value="" />
+            <label class="bjl">辅导3班</label></span></p>
+      </div>
+    <div class="trSearch s_li_a" id="s_1" style="display:block;">
+      <label class="trSt">辅导1班学生：</label>
+      <p class="trSP"><span class="trSPspan">
+        <input name="" type="checkbox" value="" />
+        王同学</span> <span class="trSPspan">
+        <input name="" type="checkbox" value="" />
+        王同学</span> <span class="trSPspan">
+        <input name="" type="checkbox" value="" />
+        王同学</span> <span class="trSPspan">
+        <input name="" type="checkbox" value="" />
+        王同学</span> <span class="trSPspan">
+        <input name="" type="checkbox" value="" />
+        王同学</span> <span class="trSPspan">
+        <input name="" type="checkbox" value="" />
+        王同学</span> <span class="trSPspan">
+        <input name="" type="checkbox" value="" />
+        王同学</span></p>
+    </div>
+	<div class="trSearch s_li" id="s_2"  onmouseover='mover(2);' onmouseout='mout(2);' style="display:none;">
+      <label class="trSt">辅导2班学生：</label>
+      <p class="trSP"><span class="trSPspan">
+        <input name="" type="checkbox" value="" />
+        王同学</span> <span class="trSPspan">
+        <input name="" type="checkbox" value="" />
+        王同学</span> <span class="trSPspan">
+        <input name="" type="checkbox" value="" />
+        王同学</span> <span class="trSPspan">
+        <input name="" type="checkbox" value="" />
+        王同学</span> <span class="trSPspan">
+        <input name="" type="checkbox" value="" />
+        王同学</span> <span class="trSPspan">
+        <input name="" type="checkbox" value="" />
+        王同学</span> <span class="trSPspan">
+        <input name="" type="checkbox" value="" />
+        王同学</span></p>
+    </div>
+	<div class="trSearch s_li" id="s_3"  onmouseover='mover(3);' onmouseout='mout(3);' style="display:none;">
+      <label class="trSt">辅导2班学生：</label>
+      <p class="trSP"><span class="trSPspan">
+        <input name="" type="checkbox" value="" />
+        王同学</span> <span class="trSPspan">
+        <input name="" type="checkbox" value="" />
+        王同学</span> <span class="trSPspan">
+        <input name="" type="checkbox" value="" />
+        王同学</span> <span class="trSPspan">
+        <input name="" type="checkbox" value="" />
+        王同学</span> <span class="trSPspan">
+        <input name="" type="checkbox" value="" />
+        王同学</span> <span class="trSPspan">
+        <input name="" type="checkbox" value="" />
+        王同学</span> <span class="trSPspan">
+        <input name="" type="checkbox" value="" />
+        王同学</span></p>
+    </div>
+    <div class="dqxs"><span class="left">学号：XXXXXXXXXXXX&nbsp;&nbsp;&nbsp;&nbsp; 姓名：XXXXXXXXXXXX</span><span class="right xzxs">
+      <label class="hand">&lt;上一位学生 </label>
+      &nbsp;|&nbsp;
+      <label class="hand">下一位学生 &gt;</label>
+      </span></div>
+    <div class="btnDiv" style="width:153px;"><a class="btnSpan" href="在线作答作业批改-作业.html">批改作业</a> </div>
+  </div>
+  <div class="clear"></div>
+</div>
+</div>
+<!--footer start-->
+    <iframe src="../footer.html" frameborder="0" width="100%" height="150px"></iframe>
+    <!--footer end-->
+</body>
+</html>

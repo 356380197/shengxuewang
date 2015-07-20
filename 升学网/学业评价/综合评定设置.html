@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>教师端教学系统-综合评定设置</title>
+<link href="../default/css/style.css" rel="stylesheet" type="text/css" />
+<link href="../default/css/scEvaluate.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="b1">
+	<iframe width="100%" height="151px" frameborder="0" src="../head.html" style="display:none"></iframe>
+	<div class="browseTitle">综合评定设置</div>
+	<div class="teCbox tmesBox lClass">
+		<!--设置说明 start-->
+		<div class="set_explain">
+			<h3>设置说明:</h3>
+			<p>您可以对考试进行权重设置，从而得出每个学生的综合评定成绩，设置要求：所有考试权重设置的和应为100%，如共有3次考试，那么设置完成后应为考试1的权重+考试2的权重+考试3的权重=100%，如果您认为某次考试成绩不重要，该考试的权重可以设置为零。</p>
+			<p>您也可以修改综合评定的级别名称，按照您的使用习惯给四个综合评定级别命名。</p>
+		</div>
+		<!--设置说明 end-->
+		<!--权重设置表start-->
+		<div class="ztmainBox">
+			<div class="tit">
+				<span>权重设置表</span>
+			</div>
+			<table class="twTable tw1" border="0" cellspacing="0" cellpadding="0">
+			  <tr>
+				<th class="yjTitle">考试名称</th>
+				<th class="yjTitle">加入权重计算</th>
+				<th class="yjTitle"></th>
+			  </tr>
+			  <tr>
+				<td>考试1</td>
+				<td><input type="checkbox" name="" value=""></td>
+				<td><input type="text" name="" class="tinput tW6" value="请输入..." ></td>
+			  </tr>
+			  <tr>
+				<td>考试2</td>
+				<td><input type="checkbox" name="" value=""></td>
+				<td><input type="text" name="" class="tinput tW6" value="请输入..." ></td>
+			  </tr>
+			  <tr>
+				<td>考试3</td>
+				<td><input type="checkbox" name="" value=""></td>
+				<td><input type="text" name="" class="tinput tW6" value="请输入..." ></td>
+			  </tr>
+			  <tr>
+				<td>考试4</td>
+				<td><input type="checkbox" name="" value=""></td>
+				<td><input type="text" name="" class="tinput tW6" value="请输入..." ></td>
+			  </tr>
+			  <tr>
+				<td>...</td>
+				<td><input type="checkbox" name="" value=""></td>
+				<td><input type="text" name="" class="tinput tW6" value="请输入..." ></td>
+			  </tr>
+			</table>
+			<div class="tit">
+			<p>
+				<a class="cj" title="综合评定设置" href="#"><span>确认修订</span></a>
+			</p>
+		</div>
+		</div>
+		<!--权重设置表end-->
+		<!--评定级别名称设置表start-->
+		<div class="ztmainBox">
+			<div class="tit">
+				<span>评定级别名称设置表</span>
+				<p>
+					<a class="cj" title="增加级别" href="#"><span>增加级别</span></a>
+					<a class="js" title="减少级别" href="#"><span>减少级别</span></a>
+				</p>
+			</div>
+			<table class="twTable tw1" border="0" cellspacing="0" cellpadding="0">
+			  <tr>
+				<th class="yjTitle">当前级别名称</th>
+				<th class="yjTitle">描述范围</th>
+				<th class="yjTitle">修订级别名称</th>
+				<th class="yjTitle">修订级别取值范围(综合得分取值为0-100分)</th>
+			  </tr>
+			  <tr>
+				<td>A</td>
+				<td>综合得分>=85</td>
+				<td><input type="text" name="" class="tinput trW" value="输入描述词..." ></td>
+				<td><input type="text" name="" class="tinput tW6" value="请输入..." ></td>
+			  </tr>
+			  <tr>
+				<td>B</td>
+				<td>75分<=综合得分<85分</td>
+				<td><input type="text" name="" class="tinput trW" value="输入描述词..." ></td>
+				<td><input type="text" name="" class="tinput tW6" value="请输入..." ></td>
+			  </tr>
+			  <tr>
+				<td>C</td>
+				<td>60分<=综合得分<75分</td>
+				<td><input type="text" name="" class="tinput trW" value="输入描述词..." ></td>
+				<td><input type="text" name="" class="tinput tW6" value="请输入..." ></td>
+			  </tr>
+			  <tr>
+				<td>D</td>
+				<td>综合得分<60</td>
+				<td><input type="text" name="" class="tinput trW" value="输入描述词..." ></td>
+				<td><input type="text" name="" class="tinput tW6" value="请输入..." ></td>
+			  </tr>
+			</table>
+			<div class="tit">
+			<p>
+				<a class="cj" title="确认修订" href="#"><span>确认修订</span></a>
+			</p>
+		</div>
+		</div>
+		<!--评定级别名称设置表end-->
+		<!--注start-->
+		<div class="set_explain">
+			<h3 class="cred">注:</h3>
+			<p>“修订级别取值范围”用括号+数字+，+数字+括号实现</p>
+			<p>例如：级别A 的取值范围可输入为[100,85]</p>
+			<p>全部取值范围应在[0-100]间，各区间段不允许有重复，如[100,85][85,75)错误，系统不予承认</p>
+		</div>
+		<!--注end-->
+		<!--bottom start-->
+		<div class="botstyBox">
+			<a class="sendre" title="保存" href="#"><span>保存</span></a>
+			<a onclick="window.close();" class="tclose" title="退出" href="#"><span>退&nbsp;&nbsp;出</span></a>
+		</div>
+		<!--bottom end-->
+	</div>
+	<iframe width="100%" height="150px" frameborder="0" src="../footer.html"></iframe>
+</body>
+</html>

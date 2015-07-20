@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* ************************************ 
+* 文件名称：myClass.css 
+* 作    者：于柳
+* 创建日期：2013-08-23
+* 最后修改：于柳/ 创建 / 2013-08-23 
+* 文件版本：1.0 义
+* 说    明: 我的班级(教师端)
+************************************ */
+/***********myClass************/
+.mClassBox ul li{background:#f7f7f7;padding:10px 15px;overflow:hidden;zoom:1;}
+.mCbut{background:url(../images/my_class_bj.png) no-repeat scroll 0 0;width:184px;height:56px;font:14px/22px "Microsoft YaHei";text-align:center;padding:15px 15px 15px 30px;float:left;display:inline;}
+.mCbut span{font-size:16px;display:block;}
+.mcaLink{float:right;display:inline;margin-top:25px;}
+.mcNavbox{padding:0 146px 0 240px;line-height:28px;}
+.mcNavbox dl dd{float:left;width:170px;display:inline;margin-right:10px;}
+.mcNavbox dl dd.nomarSty{margin:0;}
+.mcNavbox dl dd span{margin-right:10px;}
+.mClassBox ul li.nomCnavbj{background:#fff;}
+.rbut{float:right;background:url(../images/my_class_bj.png) no-repeat scroll -271px 0;}
+.lalink{float:left;}
+.mClassBox ul li.nomCnavbj .mcNavbox{padding:0 240px 0 146px;}
+/**********classSpace***********/
+.mClassBox ol{_width:880px;}
+.mClassBox ol li{float:left;disp;ay:inline;margin:0 30px 30px;}
+.mClassBox ol li a{background:url(../images/acsp_bj.png) repeat-x scroll 0 0;border:solid 1px #c0c0c0;height:63px;min-width:106px;padding:0 15px;display:inline-block;border-radius:5px;line-height:63px;_padding-top:13px;_height:50px;font:14px/63px "Microsoft YaHei";_font:14px "Microsoft YaHei";}
+.mClassBox ol li a:hover{text-decoration:none;background:url(../images/hcsp_bj.png) repeat-x scroll 0 0;border:solid 1px #68c0ea;}

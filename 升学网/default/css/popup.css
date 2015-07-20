@@ -1,0 +1,69 @@
+@charset "utf-8";
+/* ************************************ 
+* 文件名称：popup.css 
+* 作    者：于柳
+* 创建日期：2013-08-19
+* 最后修改：于柳/ 创建 / 2013-08-21 
+* 文件版本：1.0 义
+* 说    明: 弹出样式
+************************************ */
+.sns-g{position: fixed; z-index: 1000;width: 100%;height: 100%;top: 0;left: 0;filter: alpha(opacity=50);opacity: 0.5;overflow: hidden;background-color: #000;_background-color: none;_border:10px solid #ddd;zoom:1;}
+*html { background:url(*) fixed; }
+*html body { margin:0; height:100%; }
+*html .sns-g{ position: absolute; left: expression(documentElement.scrollLeft + documentElement.clientWidth - this.offsetWidth); top: expression(documentElement.scrollTop + documentElement.clientHeight - this.offsetHeight); }
+.pop_upBox{padding:20px 20px 10px;overflow-y:auto;}
+/*试题调整*/
+.mydiv,.tcbrowseCnt{
+	text-align: left;
+	z-index:1001;
+	left:50%;/*FF IE7*/
+	top:40%;/*FF IE7*/
+	margin-top:0px;
+	position:fixed!important;/*FF IE7*/
+	position:absolute;/*IE6*/
+_top:       expression(eval(document.compatMode &&
+            document.compatMode=='CSS1Compat') ?
+            documentElement.scrollTop + (document.documentElement.clientHeight-this.offsetHeight)/2 :/*IE6*/
+            document.body.scrollTop + (document.body.clientHeight - this.clientHeight)/2);/*IE5 IE5.5*/
+
+}
+.tcdiv{ border:3px solid #2797D3; border-radius:5px;overflow-y:auto; background:#fff; margin-left:-300px!important; margin-top:-125px!important; display:none;_margin-top:-105px; padding-bottom: 20px;}
+.tcd_t{ width:100%; height:37px; line-height:37px; background:url(../images/topBg.png) 0 -311px repeat-x; float:left; font:14px/37px "Microsoft YaHei"; text-align:center;}
+.tcd_cK{width:100%; height:290px; overflow:auto;}
+.tcd_c{height:auto; padding:20px 30px 20px 20px; height:auto; float:left;width:92.9%;}
+.tcd_ch,.tcd_cht{ width:100%; min-height:22px; line-height:22px; _height:22px; float:left; padding:5px 0px; font-size:12px;}
+.close{ width:26px; height:24px; display:block; background:url(../images/icon.png) 0 -98px; float:right; margin-right:10px; *margin-right:5px; margin-top:6px; *margin-top:-30px; cursor:pointer}
+.tcd_cht{font-size:14px; color:#1EB1DA ;}
+.topborder{ border-top:1px dashed #087CB7;}
+.tjinput,.tjP4sinput{ width:60px; border:0px; border-bottom:1px solid #fff; float:left; line-height:22px; height:22px; background:none; margin:0px 30px 0 10px; text-align:center; color:#fff;}
+.tjP4sinput{ float:none; border-bottom:1px solid #35ADCD; margin-right:10px; color:#666;}
+.xtP{ float:left; width:140px;}
+.xtP2{ width:420px; float:left;}
+.xtp2s{ width:100px; float:left; display:block;}
+.tcbtnK{ width:275px; margin:0 auto;}
+.tcbtn,.tcbtn2{ width:100px; height:22px; background:#EFA55A; border: 1px solid #E27B14; border-radius:5px; line-height:22px; cursor:pointer;}
+.tcbtn2{background:#E1E4EC; border: 1px solid #C3C3C3;}
+.inputW4 {width: 40px;}
+/*智能组建试卷参照对象选择*/
+.tcd_c table{width:100%;}
+.tcd_c table tr{border-bottom:1px dashed #B7C7CD;width:100%;}
+.tcd_c table th{color:#2b9dd8;width:80px;height:30px;padding:5px 0;}
+.tcd_c table td{padding:5px 0;}
+.tcd_c table input{margin:0 3px;vertical-align: middle;}
+.ejstu{overflow:hidden;display:none;}
+.ejstu .close{background:url(../images/but.gif) no-repeat scroll 0 -150px;width:15px;height:15px;}
+.ejstu ul li{float:left;display:inline;width:110px;padding:10px 1px 0 0;}
+/*创建新作业*/
+.workhe{height:60px;}
+/*手工*/
+.wshare{height:200px;}
+.yjsh{width:100%;display:inline-block;}
+.ejsh{margin-left:40px;}
+.ejsh em{margin-right:10px;}
+/*作业评定设置*/
+.pop_tpTop{overflow:hidden;color: #1EB1DA;margin-bottom:10px;}
+.poprbut{float:right;display:inline;}
+.poprbut a{margin-left:10px;}
+.leaveBox{border:1px solid #5794BF;width:600px;height:160px;overflow-y:auto;}
+/*布置新作业*/
+#cfsdx .trSearch{width:100%;}

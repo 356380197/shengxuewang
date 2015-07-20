@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>教师端教学系统-班级多次考试分析-列表</title>
+<link href="../default/css/style.css" rel="stylesheet" type="text/css" />
+<link href="../default/css/scEvaluate.css" rel="stylesheet" type="text/css" />
+<script language="javascript" src="../default/js/jquery-1.3.1.js"></script>
+<script language="javascript" src="../default/js/my.js"></script>
+</head>
+<body class="b1">
+<iframe width="100%" height="151px" frameborder="0" src="../head.html"></iframe>
+<div class="teCbox">
+  <h1><img src="../default/images/mutual/ico_tit.gif"><a title="学业评价" href="班级成绩册.html">学业评价</a>&nbsp;&gt;&nbsp;<a href="班级多次考试分析.html">班级多次考试分析</a>&nbsp;&gt;&nbsp;班级多次考试分析-列表</h1>
+  <div class="tMainBox">
+	<!--left start-->
+    <div class="trcntl">
+		<ol>
+			<li>
+				<a href="班级成绩册.html" class="trcntla" title="班级成绩册">班级成绩册</a>
+				<div class="lineb"></div>
+			</li>
+			<li>
+				<a href="班级作业统计.html" class="trcntla" title="班级作业统计">班级作业统计</a>
+				<div class="lineb"></div>
+			</li>
+			<li>
+				<a href="班级单次考试分析.html" class="trcntla" title="班级单次考试分析">班级单次考试分析</a>
+			</li>
+			<li>
+				<a href="班级多次考试分析.html" class="traOk trcntla" title="班级多次考试分析">班级多次考试分析</a>
+				<div class="lineb"></div>
+			</li>
+			<li>
+				<a href="学生单次考试分析.html" class="trcntla" title="学生单次考试分析">学生单次考试分析</a>
+				<div class="lineb"></div>
+			</li>
+			<li>
+				<a href="学生多次考试分析.html" class="trcntla" title="学生多次考试分析">学生多次考试分析</a>
+				<div class="lineb"></div>
+			</li>
+		</ol>
+	</div>
+	<!--left end-->
+	<!--right start-->
+    <div class="trcntr">
+		<div id="stab" class="selectBox">
+			<dl>
+				<dt>请选择考试时间：</dt>
+				<dd class="hover"><input type="radio" value="" name="">按学年度-学期</dd>
+				<dd class="link"><input type="radio" value="" name="">按时间范围</dd>
+			</dl>
+			<div class="selMbox">
+				<div id="sec" class="secont">
+					<em class="sclose" onclick="divSH('none','sec')" title="关闭"></em>
+					<select name="s1" size="1" class="trselect">
+					  <option selected="selected">请选择</option>
+					  <option>2012-2013第二学期</option>
+					  <option>2013-2014第一学期</option>
+					</select>
+				</div>
+				<div id="sec1" class="secont">
+					<em class="sclose" onclick="divSH('none','sec1')" title="关闭"></em>
+					<em>从</em><input name="input" class="trSinput" type="text" value="请输入..." /><em>到</em><input name="input" class="trSinput" type="text" value="请输入..." />
+				</div>
+			</div>
+		</div>
+		<div class="selectBox">
+			<label class="trSt">请选择年级：</label>
+			<select class="trselect" name="">
+				<option>不限</option>
+				<option>高一</option>
+				<option>高二</option>
+				<option>高三</option>
+			</select>
+			<label class="trSt mal10">请选择班级：</label>
+			<select class="trselect" name="">
+				<option>不限</option>
+				<option>一班</option>
+				<option>二班</option>
+				<option>三班</option>
+			</select>
+			<label class="trSt mal10">请选择考试：</label>
+			<select class="trselect" name="">
+				<option>不限</option>
+				<option>语文</option>
+				<option>数学</option>
+				<option>英语</option>
+			</select>
+		</div>
+		<div class="btnDiv"><a href="testContent.html" class="btnSpan">确定</a></div>
+		<!--树 start-->
+		<div class="treeBox">
+			<div class="tTop">
+				<a href="#" title="下载" class="cj"><span>下载</span></a>
+				<a href="#" title="打印" class="js"><span>打印</span></a>
+			</div>
+			<!--树主体start-->
+			<div id="nav" class="treeMain">
+				<ul>
+					<li id="m01" class="alSty">基本信息</li>
+					<li id="m02" class="alSty">成绩基本信息</li>
+					<li id="m03" class="alSty">成绩质量分析</li>
+				</ul>
+			</div>
+			<div id="c01" class="treeEj">
+				<ol>
+					<li><a href="班级多次考试分析-详细页.html#jbxx" title="考试基本信息表" class="ealSty">考试基本信息表</a></li>
+				</ol>
+			</div>
+			<div id="c02" class="treeEj">
+				<ol>
+					<li><a href="班级多次考试分析-详细页.html#cjd" title="成绩单" class="ealSty">成绩单</a></li>
+					<li><a href="班级多次考试分析-详细页.html#cjfx" title="成绩分析" class="ealSty">成绩分析</a></li>
+					<li><a href="班级多次考试分析-详细页.html#fsdfx" title="分数段分析" class="ealSty">分数段分析</a></li>
+					<li><a href="班级多次考试分析-详细页.html#slfx" title="四率分析" class="ealSty">四率分析</a></li>
+					<li><a href="班级多次考试分析-详细页.html#btqzfx" title="不同群组分析" class="ealSty">不同群组分析</a></li>
+				</ol>
+			</div>
+			<div id="c03" class="treeEj">
+				<ol>
+					<li><a href="班级多次考试分析-详细页.html#zkgt" title="主客观题作答分析" class="ealSty">主客观题作答分析</a></li>
+					<li><a href="班级多次考试分析-详细页.html#zsmkzw" title="知识模块掌握分析" class="ealSty">知识模块掌握分析</a></li>
+					<li><a href="班级多次考试分析-详细页.html#btndsj" title="不同难度试题作答分析" class="ealSty">不同难度试题作答分析</a></li>
+				</ol>
+			</div>
+			<!--树主体end-->
+		</div>
+		<!--树 end-->
+	</div>
+	<!--right end-->
+  </div>
+</div>
+<iframe width="100%" height="150px" frameborder="0" src="../footer.html"></iframe>
+</body>
+</html>

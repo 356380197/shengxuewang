@@ -1,0 +1,469 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>教师端教学系统-安排新考试</title>
+<link href="../default/css/trcss.css" rel="stylesheet" type="text/css" />
+<link href="../default/css/style.css" rel="stylesheet" type="text/css" />
+<link href="../default/css/popup.css" rel="stylesheet" type="text/css" />
+<script language="javascript" src="../default/js/jquery-1.3.1.js"></script>
+<script language="javascript" src="../default/js/my.js"></script>
+</head>
+<body class="b1 zyks">
+<!--head start-->
+    <iframe src="../head.html" frameborder="0" width="100%" height="151px"></iframe>
+    <!--head end-->
+<div class="teCbox">
+  <h1><img src="../default/images/mutual/ico_tit.gif"><a href="试卷管理.html" title="作业考试">作业考试</a>&nbsp;&gt;&nbsp;<a href="考试安排.html">考试安排与批改</a>&nbsp;&gt;&nbsp;安排新考试</h1>
+  <div class="tMainBox">
+    <!--left start-->
+    <div class="trcntl">
+		<ol>
+			<li>
+				<a href="试卷管理.html" class="trcntla" title="试卷管理">试卷管理</a>
+				<div class="lineb"></div>
+			</li>
+			<li>
+				<a href="考试安排.html" class="traOk trcntla" title="考试安排与批改">考试安排与批改</a>
+				
+			</li>
+			<li>
+				<a href="作业管理.html" class="trcntla" title="作业管理">作业管理</a>
+				<div class="lineb"></div>
+			</li>
+			<li>
+				<a href="作业布置与批改.html" class="trcntla" title="作业布置与批改">作业布置与批改</a>
+				<div class="lineb"></div>
+			</li>
+		</ol>
+	</div>
+	<!--left end-->
+    <div class="trcntr">
+      <div class="trSearch">
+        <label class="trSt">考试名称：</label>
+        <input name="" type="text" class="trSinput" />
+      </div>
+      <div class="trSearch">
+        <label class="trSt">考试学科：</label>
+        <p class="trSP"><span class="trSPspan">
+            <input name="" type="checkbox" value="" />
+            不限</span> <span class="trSPspan">
+            <input name="" type="checkbox" value="" />
+            语文</span> <span class="trSPspan">
+            <input name="" type="checkbox" value="" />
+            数学</span> <span class="trSPspan">
+            <input name="" type="checkbox" value="" />
+            英语</span></p>
+      </div>
+      <div class="trSearch">
+        <label class="trSt">考试年级：</label>
+        <p class="trSP"><span class="trSPspan">
+            <input name="" type="checkbox" value="" />
+            不限</span> <span class="trSPspan">
+            <input name="" type="checkbox" value="" />
+            高三</span> <span class="trSPspan">
+            <input name="" type="checkbox" value="" />
+            高二</span> <span class="trSPspan">
+            <input name="" type="checkbox" value="" />
+            高一</span> <span class="trSPspan">
+            <input name="" type="checkbox" value="" />
+            初三</span> <span class="trSPspan">
+            <input name="" type="checkbox" value="" />
+            初二</span> <span class="trSPspan">
+            <input name="" type="checkbox" value="" />
+            初一</span></p>
+      </div>
+      <div class="trSearch">
+        <label class="trSt">所属课程：</label>
+        <select name="" class="trselect">
+          <option></option>
+        </select>
+      </div>
+      <div class="trSearch">
+        <label class="trSt">考试类型：</label>
+          <p class="trSP"><span class="trSPspan">
+            <input name="" type="checkbox" value="" />
+            不限</span> <span class="trSPspan">
+            <input name="" type="checkbox" value="" />
+            高三</span></p>
+      </div>
+      <div class="trSearch">
+        <label class="trSt">采用AB卷：</label>
+        <span class="trSPspan">
+          <input name="" type="radio" value="" />
+          是</span><span class="trSPspan">
+          <input name="" type="radio" value="" />
+          否</span>
+      </div>
+      <div class="trSearch">
+        <label class="trSt">试卷选取：</label>
+        <p class="trSP">
+        <span class="rx disdiv inputW" onclick="divSH('xqSj','none')" id="xqSpan">点击选取考试试卷</span>
+        <p class="nodiv" id="oksj"><span class="trSPspan blue">力学测试1</span><span class="trSPspan rx" onclick="divSH('xqSpan','oksj')">删除</span></p>
+        </p>
+      </div>
+      <div class="trSearch">
+        <label class="trSt">考试形式：</label>
+        <span class="trSPspan">
+          <input name="" type="radio" value="" />
+          线上测试</span><span class="trSPspan">
+          <input name="" type="radio" value="" />
+          笔试</span>
+      </div>
+      <div class="trSearch">
+        <label class="trSt">考试群体：</label>
+        <div class="trSP">
+        <span class="rx disdiv inputW" onclick="divSH('xzqt','none')" id="xqqtSpan">点击此选择测试群体</span>
+        <div class=" wl nodiv left" id="qtp">
+        <p class="ksNum" >
+        <span class="trSPspan">学生姓名</span><span class="trSPspan">学生姓名</span><span class="trSPspan">学生姓名</span><span class="trSPspan">学生姓名</span><span class="trSPspan">学生姓名</span><span class="trSPspan">学生姓名</span><span class="trSPspan">学生姓名</span><span class="trSPspan">学生姓名</span>
+        </p>
+        <span class="rx disdiv left" onclick="divSH('xqqtSpan','qtp')">清除</span></div>
+        </div>
+      </div>
+      <div class="trSearch">
+        <label class="trSt">考试说明：</label>
+        <textarea name="" cols="" rows="" class="textareaCss2"></textarea>
+      </div>
+      <div class="trSearch">
+        <label class="trSt">考试开始方式：</label>
+        <span class="trSPspan">
+          <input name="" type="radio" value="" onclick="divSH('none','timeDiv')" />
+          实时测试</span><span class="trSPspan">
+          <input name="" type="radio" value="" onclick="divSH('timeDiv','none')" />
+          定时测试</span>
+      </div>
+      <div class="trSearch nodiv" id="timeDiv">
+      <p class="trSP" style="padding-left:100px;">
+        <span class="left" >&nbsp;从&nbsp;</span><input name="" type="text" class="trSinput inputW" value="" /><span class="left">&nbsp;至&nbsp;</span><input name="" type="text" class="trSinput inputW" value="" />
+          </p>
+      </div>
+      <div class="clear"></div>
+      <div class="btnDiv"><a class="btnSpan" href="#">发布考试</a><span class="btnSpan2 right">暂存考试</span>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </div>
+  <div class="clear"></div>
+</div>
+<div id="xqSj" class="tcdiv mydiv tcdivWH newsty" style="_margin-top:30px;height:auto;">
+  <div class="tcd_t">选取考试内容 <span class="close" onclick="divSH('none','xqSj')"></span></div>
+  <div class="tcd_cK" style="height:auto;">
+    <div class="tcd_c" style="width:710px;">
+      <p class="trSearch">
+        <label class="trSt">试卷搜索：</label>
+        <input name="" type="text" class="trSinput" />
+        <input name="" type="button" class="trbtn" value="搜 索" />
+        <span class="Gtrss">︽展开高级搜索</span></p>
+      <div class="GjDiv wl">
+        <div class="trSearch">
+          <label class="trSt">学科：</label>
+          <p class="trSP"><span class="trSPspan">
+            <input name="" type="checkbox" value="" />
+            不限</span> <span class="trSPspan">
+            <input name="" type="checkbox" value="" />
+            语文</span> <span class="trSPspan">
+            <input name="" type="checkbox" value="" />
+            数学</span> <span class="trSPspan">
+            <input name="" type="checkbox" value="" />
+            英语</span></p>
+        </div>
+        <div class="trSearch">
+          <label class="trSt">适用年级：</label>
+          <p class="trSP"><span class="trSPspan">
+            <input name="" type="checkbox" value="" />
+            不限</span> <span class="trSPspan">
+            <input name="" type="checkbox" value="" />
+            高三</span> <span class="trSPspan">
+            <input name="" type="checkbox" value="" />
+            高二</span> <span class="trSPspan">
+            <input name="" type="checkbox" value="" />
+            高一</span> <span class="trSPspan">
+            <input name="" type="checkbox" value="" />
+            初三</span> <span class="trSPspan">
+            <input name="" type="checkbox" value="" />
+            初二</span> <span class="trSPspan">
+            <input name="" type="checkbox" value="" />
+            初一</span></p>
+        </div>
+        <div class="trSearch">
+          <label class="trSt">适用教材版本：</label>
+          <p class="trSP"><span class="trSPspan">
+            <input name="" type="checkbox" value="" />
+            不限</span> <span class="trSPspan">
+            <input name="" type="checkbox" value="" />
+            聚智未来</span> <span class="trSPspan">
+            <input name="" type="checkbox" value="" />
+            人教版</span> <span class="trSPspan">
+            <input name="" type="checkbox" value="" />
+            沪科版</span> <span class="trSPspan">
+            <input name="" type="checkbox" value="" />
+            北师大版</span></p>
+        </div>
+        <p class="trSearch">
+          <label class="trSt">适用课程：</label>
+          <select name="" class="trselect">
+            <option>请选择适用课程</option>
+          </select>
+          <label class="trSt">适用地域：</label>
+          <select name="" class="trselect">
+            <option>请选择适用地域</option>
+          </select>
+        </p>
+        <div class="trSearch">
+            <label class="trSt">文理分科：</label>
+            <span class="trSPspan left"><input name="" type="radio" value="" />&nbsp;通用&nbsp;&nbsp;
+            <input name="" type="radio" value="" />&nbsp;理科试卷&nbsp;&nbsp;
+            <input name="" type="radio" value="" />&nbsp;文科试卷&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <label class="trSt">&nbsp;&nbsp;&nbsp;&nbsp;试卷状态：</label>
+            <span class="trSPspan left"><input name="" type="radio" value="" />&nbsp;全部&nbsp;&nbsp;<input name="" type="radio" value="" />&nbsp;已完成&nbsp;&nbsp;<input name="" type="radio" value="" />&nbsp;未完成&nbsp;&nbsp;</span>
+        </div>
+        <p class="trSearch textC">
+          <input name="" type="button" class="ssBtn" value="高级查询" />
+        </p>
+      </div>
+      <div class="listTitleh wl" style="margin-top:10px;"><span class="lstok" id="lst0" onclick="switchmodTag('lst','listTa',0,4)">个人试卷</span><span class="lstno" id="lst1" onclick="switchmodTag('lst','listTa',1,4)">精选试卷</span><span class="lstno" id="lst2" onclick="switchmodTag('lst','listTa',2,4)">水平诊断卷</span><span class="lstno" id="lst3" onclick="switchmodTag('lst','listTa',3,4)">聚智卷库</span></div>
+      <div class="listTaok" id="listTa0" style="width:100%;">
+        <table class="trTable" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <th></th>
+            <th>序号</th>
+            <th>试卷名称</th>
+            <th>学科</th>
+            <th>适用课程</th>
+            <th>适用年级</th>
+            <th>试卷难度</th>
+            <th>组卷人</th>
+            <th>更新日期</th>
+            <th>使用状态</th>
+          </tr>
+          <tr>
+            <td align="center"><input name="" type="radio" value="" /></td>
+            <td>1</td>
+            <td class="trW"><a href="#">数组标准测试试卷</a></td>
+            <td>理科试卷</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>2013-09-06</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td></td>
+          </tr>
+        </table>
+        <div class="jwcPage"><span class="jpl">共有&nbsp;
+          <label class="red">50</label>
+          &nbsp;条数据，当前第&nbsp;
+          <label class="red">1</label>
+          &nbsp;页</span><span class="jpr">
+          <label>共&nbsp;5&nbsp;页&nbsp;&nbsp;&nbsp;</label>
+          <a href="#" class="jprw">首页</a><a href="#" class="jprw">上一页</a><a href="#" class="jprsok">1</a><a href="#" class="jprs">2</a><a href="#" class="jprs">3</a><a href="#" class="jprw">下一页</a><a href="#" class="jprw">尾页</a>
+          <label>跳转</label>
+          <input name="" type="text" class="jpinp" />
+          <input name="" type="button" value="GO" class="jpgo" />
+          </span></div>
+      </div>
+      <div class="listTano" id="listTa1" style="width:100%;">
+       <table class="trTable" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <th></th>
+            <th>序号</th>
+            <th>试卷名称</th>
+            <th>学科</th>
+            <th>适用课程</th>
+            <th>适用年级</th>
+            <th>试卷难度</th>
+            <th>组卷人</th>
+            <th>更新日期</th>
+            <th>使用状态</th>
+          </tr>
+          <tr>
+            <td align="center"><input name="" type="radio" value="" /></td>
+            <td>1</td>
+            <td class="trW"><a href="#">数组标准测试试卷</a></td>
+            <td>理科试卷</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>2013-09-06</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td></td>
+          </tr>
+        </table>
+        <div class="jwcPage"><span class="jpl">共有&nbsp;
+          <label class="red">50</label>
+          &nbsp;条数据，当前第&nbsp;
+          <label class="red">1</label>
+          &nbsp;页</span><span class="jpr">
+          <label>共&nbsp;5&nbsp;页&nbsp;&nbsp;&nbsp;</label>
+          <a href="#" class="jprw">首页</a><a href="#" class="jprw">上一页</a><a href="#" class="jprsok">1</a><a href="#" class="jprs">2</a><a href="#" class="jprs">3</a><a href="#" class="jprw">下一页</a><a href="#" class="jprw">尾页</a>
+          <label>跳转</label>
+          <input name="" type="text" class="jpinp" />
+          <input name="" type="button" value="GO" class="jpgo" />
+          </span></div>
+      </div>
+      <div class="listTano" id="listTa2" style="width:100%;">
+        <table class="trTable" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <th></th>
+            <th>序号</th>
+            <th>试卷名称</th>
+            <th>学科</th>
+            <th>适用课程</th>
+            <th>适用年级</th>
+            <th>试卷难度</th>
+            <th>组卷人</th>
+            <th>更新日期</th>
+            <th>使用状态</th>
+          </tr>
+          <tr>
+            <td align="center"><input name="" type="radio" value="" /></td>
+            <td>1</td>
+            <td class="trW"><a href="#">数组标准测试试卷</a></td>
+            <td>理科试卷</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>2013-09-06</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td></td>
+          </tr>
+        </table>
+        <div class="jwcPage"><span class="jpl">共有&nbsp;
+          <label class="red">50</label>
+          &nbsp;条数据，当前第&nbsp;
+          <label class="red">1</label>
+          &nbsp;页</span><span class="jpr">
+          <label>共&nbsp;5&nbsp;页&nbsp;&nbsp;&nbsp;</label>
+          <a href="#" class="jprw">首页</a><a href="#" class="jprw">上一页</a><a href="#" class="jprsok">1</a><a href="#" class="jprs">2</a><a href="#" class="jprs">3</a><a href="#" class="jprw">下一页</a><a href="#" class="jprw">尾页</a>
+          <label>跳转</label>
+          <input name="" type="text" class="jpinp" />
+          <input name="" type="button" value="GO" class="jpgo" />
+          </span></div>
+      </div>
+      <div class="listTano" id="listTa3" style="width:100%;">
+        <table class="trTable" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <th></th>
+            <th>序号</th>
+            <th>试卷名称</th>
+            <th>学科</th>
+            <th>适用课程</th>
+            <th>适用年级</th>
+            <th>试卷难度</th>
+            <th>组卷人</th>
+            <th>更新日期</th>
+            <th>使用状态</th>
+          </tr>
+          <tr>
+            <td align="center"><input name="" type="radio" value="" /></td>
+            <td>1</td>
+            <td class="trW"><a href="#">数组标准测试试卷</a></td>
+            <td>理科试卷</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>2013-09-06</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td></td>
+          </tr>
+        </table>
+        <div class="jwcPage"><span class="jpl">共有&nbsp;
+          <label class="red">50</label>
+          &nbsp;条数据，当前第&nbsp;
+          <label class="red">1</label>
+          &nbsp;页</span><span class="jpr">
+          <label>共&nbsp;5&nbsp;页&nbsp;&nbsp;&nbsp;</label>
+          <a href="#" class="jprw">首页</a><a href="#" class="jprw">上一页</a><a href="#" class="jprsok">1</a><a href="#" class="jprs">2</a><a href="#" class="jprs">3</a><a href="#" class="jprw">下一页</a><a href="#" class="jprw">尾页</a>
+          <label>跳转</label>
+          <input name="" type="text" class="jpinp" />
+          <input name="" type="button" value="GO" class="jpgo" />
+          </span></div>
+      </div>
+    </div>
+  </div>
+<div class="tcbtnK">
+  <input name="" type="button" class="tcbtn ycmy" value="确定"  onclick="divSH('oksj','xqSpan')"/>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input name="" type="button" value="取消" class="tcbtn2" onclick="divSH('none','xqSj')"/>
+</div>
+<div class="clear"></div>
+</div>
+
+<div id="xzqt" class="tcdiv mydiv tcdivWH" style="_margin-top:30px;height:auto;">
+  <div class="tcd_t">选取测试群体<span class="close" onclick="divSH('none','xzqt')"></span></div>
+  <div class="tcd_cK" style="height:auto;">
+    <div class="tcd_c" style="width:700px;">
+        <div class="trSearch">
+          <label class="trSt inputW2">年级：</label>
+          <p class="trSP"><span class="trSPspan">
+            <input name="" type="radio" value="" />
+            高一</span> <span class="trSPspan">
+            <input name="" type="radio" value="" />
+            高二</span> <span class="trSPspan">
+            <input name="" type="radio" value="" />
+            高三</span> <span class="trSPspan">
+            <input name="" type="radio" value="" />
+            初一</span></p>
+        </div>
+        <div class="trSearch">
+          <label class="trSt inputW2">校区：</label>
+          <p class="trSP"><span class="trSPspan">
+            <input name="" type="checkbox" value="" />
+            海淀第一分校</span> <span class="trSPspan">
+            <input name="" type="checkbox" value="" />
+            海淀第二分校</span> <span class="trSPspan">
+            <input name="" type="checkbox" value="" />
+            海淀第三分校</span></p>
+        </div>
+        <div class="trSearch">
+          <p class="trSP" style="padding-left:60px; width:540px;"><span class="trSPspan_a" id="m_1">
+            <input name="" type="checkbox" value="" />
+            <label class="bjl">辅导1班</label></span> <span class="trSPspan" id="m_2" onmouseover='mover(2);' onmouseout='mout(2);'>
+            <input name="" type="checkbox" value="" />
+            <label class="bjl">辅导2班</label></span> <span class="trSPspan" id="m_3" onmouseover='mover(3);' onmouseout='mout(3);'>
+            <input name="" type="checkbox" value="" />
+            <label class="bjl">辅导3班</label></span></p>
+        </div>
+        <div class="trSearch s_li_a" id="s_1" style="display:block;">
+        <label class="trSt" style=" width:110px">辅导1班全体学生：</label>
+          <p class="trSP"><span class="trSPspan">
+            <input name="" type="checkbox" value="" />
+            李同学</span> <span class="trSPspan">
+            <input name="" type="checkbox" value="" />
+            李同学</span> <span class="trSPspan">
+            <input name="" type="checkbox" value="" />
+            李同学</span></p>
+        </div>
+		<div class="trSearch s_li" id="s_2"  onmouseover='mover(2);' onmouseout='mout(2);' style="display:none;">
+        <label class="trSt" style=" width:110px">辅导2班全体学生：</label>
+          <p class="trSP"><span class="trSPspan">
+            <input name="" type="checkbox" value="" />
+            李同学</span> <span class="trSPspan">
+            <input name="" type="checkbox" value="" />
+            李同学</span> <span class="trSPspan">
+            <input name="" type="checkbox" value="" />
+            李同学</span></p>
+        </div>
+		<div class="trSearch s_li" id="s_3"  onmouseover='mover(3);' onmouseout='mout(3);' style="display:none;">
+        <label class="trSt" style=" width:110px">辅导3班全体学生：</label>
+          <p class="trSP"><span class="trSPspan">
+            <input name="" type="checkbox" value="" />
+            李同学</span> <span class="trSPspan">
+            <input name="" type="checkbox" value="" />
+            李同学</span> <span class="trSPspan">
+            <input name="" type="checkbox" value="" />
+            李同学</span></p>
+        </div>
+       </div>
+  </div>
+<div class="tcbtnK">
+  <input name="" type="button" class="tcbtn ycmy" value="确定"  onclick="divSH('qtp','xqqtSpan')"/>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input name="" type="button" value="取消" class="tcbtn2" onclick="divSH('none','xzqt')"/>
+</div>
+</div>
+<!--footer start-->
+    <iframe src="../footer.html" frameborder="0" width="100%" height="150px"></iframe>
+    <!--footer end-->
+</body>
+</html>

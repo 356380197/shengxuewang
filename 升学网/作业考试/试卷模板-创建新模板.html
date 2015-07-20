@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>教师端教学系统-创建新模板</title>
+<link href="../default/css/style.css" rel="stylesheet" type="text/css" />
+<link href="../default/css/trcss.css" rel="stylesheet" type="text/css" />
+<link href="../default/css/popup.css" rel="stylesheet" type="text/css" />
+<script language="javascript">
+function divSH(myid,youid){
+	            if(myid=='none'){
+				var youid=document.getElementById(youid);
+				youid.style.display="none";
+				}else if(youid=='none'){
+					var myid=document.getElementById(myid);
+					myid.style.display="block";
+					}else{
+						var myid=document.getElementById(myid);
+					    myid.style.display="block";
+						var youid=document.getElementById(youid);
+				        youid.style.display="none";
+						}
+				}
+</script>
+</head>
+<body class="b1 zyks">
+<!--head start-->
+    <iframe src="../head.html" frameborder="0" width="100%" height="151px"></iframe>
+    <!--head end-->
+<div class="teCbox">
+  <h1><img src="../default/images/mutual/ico_tit.gif"><a href="试卷管理.html" title="试卷管理">试卷管理</a>&nbsp;&gt;&nbsp;<a href="试卷模板.html" title="试卷模板">试卷模板</a>&nbsp;&gt;&nbsp;创建新模板</h1>
+  <div class="tmesBox mesSty">
+	<p class="trSearch">
+		<span class="trSc">
+			<label class="trSt">学科：</label>
+			<select class="trselect" name="">
+				<option>请选择学科</option>
+			</select>
+        </span>
+		<span class="trSc">
+			<label class="trSt">模板类型：</label>
+			<input type="radio" value="" name="">单科&nbsp;&nbsp;&nbsp;
+			<input type="radio" value="" name="">文综&nbsp;&nbsp;&nbsp;
+			<input type="radio" value="" name="">理综&nbsp;&nbsp;&nbsp;
+		</span>
+		<span class="trSc">
+			<label class="trSt">应用范围：</label>
+			<input type="radio" value="" name="">通用&nbsp;&nbsp;&nbsp;
+			<input type="radio" value="" name="">模拟测试&nbsp;&nbsp;&nbsp;
+			<input type="radio" value="" name="">单元测试
+		</span>
+	</p>
+	<p class="trSearch">
+		<span class="trSc">
+			<label class="trSt">模板名称：</label>
+			<input type="text" value="" class="trSinput inputW" name="">
+        </span>
+		<span class="trSc">
+			<label class="trSt">题号方式：</label>
+			<input type="radio" value="" name="">连续&nbsp;&nbsp;&nbsp;
+			<input type="radio" value="" name="">单独排序
+		</span>
+	</p>
+	<p class="trSearch">
+		<span class="trSc">
+			<label class="trSt">考试时长：</label>
+			<input type="text" value="" class="trSinput inputW2" name="">
+			<label class="left">&nbsp;分钟</label>
+			<label class="trSt">试卷总分：</label>
+			<input type="text" value="" class="trSinput inputW2" name="">
+        </span>
+	</p>
+	<p class="listp width100"><span onclick="divSH('addst','none')" href="#" class="listbtn lb1">添加试题</span><span onclick="divSH('addzjg','none')" class="listbtn lb2">添加子结构</span><span onclick="divSH('addjg','none')" class="listbtn lb3">添加结构</span></p>
+	<div class="listTaok crw">
+		<p id="addjg" class="tjP">
+          <input type="text" class="trSinput inputW3" name="">
+          <textarea class="textareaCss" rows="" cols="" name=""></textarea>
+          <span class="tjxx"> <span class="tjxxh">
+          <input type="radio" value="" name="">
+          靠右显示</span> <span class="tjxxh">
+          <input type="radio" value="" name="">
+          居中显示</span> </span> 
+		</p>
+		<p id="addzjg" class="tjP2">
+          <input type="text" class="trSinput inputW3" name="">
+          <textarea class="textareaCss" rows="" cols="" name=""></textarea>
+          <span class="tjxx"> <span class="tjxxh">
+          <input type="radio" value="" name="">
+          靠右显示</span> <span class="tjxxh">
+          <input type="radio" value="" name="">
+          居中显示</span> </span>
+		</p>
+		<div id="tnum" class="p3p4">
+          <p class="tjP3"> <span class="tjP3s">试题数量</span>
+            <input type="text" class="tjinput" name="">
+            <span class="tjP3s">总分</span>
+            <input type="text" class="tjinput" name="">
+            <input type="button" value="重新设置" class="trbtn" name="">
+            <input type="button" value="删除" class="trbtn" name="">
+          </p>
+          <p class="tjP4"><span class="tjP4s">第1题：
+            <input type="text" class="tjP4sinput" name="">
+            分</span><span class="tjP4s">第1题：
+            <input type="text" class="tjP4sinput" name="">
+            分</span><span class="tjP4s">第1题：
+            <input type="text" class="tjP4sinput" name="">
+            分</span><span class="tjP4s">第1题：
+            <input type="text" class="tjP4sinput" name="">
+            分</span></p>
+        </div>
+	</div>
+	<div class="clear"></div>
+	<div class="btnDiv"><span class="btnSpan">保&nbsp;&nbsp;存</span><span class="btnSpan2 right">取&nbsp;&nbsp;消</span>
+        <div class="clear"></div>
+    </div>
+  </div>
+</div>
+<div class="tcdiv mydiv" id="addst" style="width:700px;">
+  <div class="tcd_t">试题调整<span onclick="divSH('none','addst')" class="close"></span></div>
+  <div class="tcd_cK">
+    <div class="tcd_c">
+      <p class="tcd_cht">本结构希望出现的题型：</p>
+      <p class="tcd_ch">
+        <input type="checkbox" value="" name="">
+        听力主观题&nbsp;&nbsp;
+        <input type="checkbox" value="" name="">
+        听力客观题&nbsp;&nbsp;
+        <input type="checkbox" value="" name="">
+        任务型阅读&nbsp;&nbsp;
+        <input type="checkbox" value="" name="">
+        完形填空&nbsp;&nbsp;
+        <input type="checkbox" value="" name="">
+        写作</p>
+      <p style=" padding:10px 0px;" class="tcd_cht topborder">本结构希望出现的题型：
+        <input type="text" class="tjP4sinput" name="">
+        题</p>
+      <p class="tcd_cht topborder">赋分方式：</p>
+      <p class="tcd_ch">
+        <input type="radio" value="" name="">
+        各小题均分
+        <input type="text" class="tjP4sinput" name="">
+        分值</p>
+      <div class="tcd_ch">
+        <p class="xtP">
+          <input type="radio" value="" name="">
+          各小题单独赋分</p>
+        <p class="xtP2"><span class="xtp2s">1.
+          <input type="text" class="tjP4sinput inputW4" name="">分
+          </span><span class="xtp2s">1.
+          <input type="text" class="tjP4sinput inputW4" name="">分
+          </span><span class="xtp2s">1.
+          <input type="text" class="tjP4sinput inputW4" name="">分
+          </span><span class="xtp2s">1.
+          <input type="text" class="tjP4sinput inputW4" name="">分
+          </span><span class="xtp2s">1.
+          <input type="text" class="tjP4sinput inputW4" name="">分
+          </span><span class="xtp2s">1.
+          <input type="text" class="tjP4sinput inputW4" name="">分
+          </span><span class="xtp2s">1.
+          <input type="text" class="tjP4sinput inputW4" name="">分
+          </span><span class="xtp2s">1.
+          <input type="text" class="tjP4sinput inputW4" name="">分
+          </span></p>
+      </div>
+    </div>
+  </div>
+  <div class="tcbtnK"><input type="button" onclick="divSH('tnum','addst')" value="确定" class="tcbtn" name="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" onclick="divSH('none','addst')" class="tcbtn2" value="取消" name=""></div>
+  <div class="clear"></div>
+</div>
+<!--footer start-->
+    <iframe src="../footer.html" frameborder="0" width="100%" height="150px"></iframe>
+    <!--footer end-->
+</body>
+</html>

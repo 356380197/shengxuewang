@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>教师端教学系统-学生单次考试分析</title>
+<link href="../default/css/style.css" rel="stylesheet" type="text/css" />
+<link href="../default/css/scEvaluate.css" rel="stylesheet" type="text/css" />
+<script language="javascript" src="../default/js/jquery-1.3.1.js"></script>
+<script language="javascript" src="../default/js/my.js"></script>
+</head>
+<body class="b1">
+<iframe width="100%" height="151px" frameborder="0" src="../head.html"></iframe>
+<div class="teCbox">
+  <h1><img src="../default/images/mutual/ico_tit.gif"><a title="学业评价" href="班级成绩册.html">学业评价</a>&nbsp;&gt;&nbsp;学生单次考试分析</h1>
+  <div class="tMainBox">
+	<!--left start-->
+    <div class="trcntl">
+		<ol>
+			<li>
+				<a href="班级成绩册.html" class="trcntla" title="班级成绩册">班级成绩册</a>
+				<div class="lineb"></div>
+			</li>
+			<li>
+				<a href="班级作业统计.html" class="trcntla" title="班级作业统计">班级作业统计</a>
+				<div class="lineb"></div>
+			</li>
+			<li>
+				<a href="班级单次考试分析.html" class="trcntla" title="班级单次考试分析">班级单次考试分析</a>
+				<div class="lineb"></div>
+			</li>
+			<li>
+				<a href="班级多次考试分析.html" class="trcntla" title="班级多次考试分析">班级多次考试分析</a>
+				<div class="lineb"></div>
+			</li>
+			<li>
+				<a href="学生单次考试分析.html" class="traOk trcntla" title="学生单次考试分析">学生单次考试分析</a>
+				
+			</li>
+			<li>
+				<a href="学生多次考试分析.html" class="trcntla" title="学生多次考试分析">学生多次考试分析</a>
+				<div class="lineb"></div>
+			</li>
+		</ol>
+	</div>
+	<!--left end-->
+	<!--right start-->
+    <div class="trcntr">
+		<div id="stab" class="selectBox">
+			<dl>
+				<dt>请选择考试时间：</dt>
+				<dd class="hover"><input type="radio" value="" name="">按学年度-学期</dd>
+				<dd class="link"><input type="radio" value="" name="">按时间范围</dd>
+			</dl>
+			<div class="selMbox">
+				<div id="sec" class="secont">
+					<em class="sclose" onclick="divSH('none','sec')" title="关闭"></em>
+					<select name="s1" size="1" class="trselect">
+					  <option selected="selected">请选择</option>
+					  <option>2012-2013第二学期</option>
+					  <option>2013-2014第一学期</option>
+					</select>
+				</div>
+				<div id="sec1" class="secont">
+					<em class="sclose" onclick="divSH('none','sec1')" title="关闭"></em>
+					<em>从</em><input name="input" class="trSinput" type="text" value="请输入..." /><em>到</em><input name="input" class="trSinput" type="text" value="请输入..." />
+				</div>
+			</div>
+		</div>
+		<div class="selectBox">
+			<label class="trSt">请选择年级：</label>
+			<select class="trselect" name="">
+				<option>不限</option>
+				<option>高一</option>
+				<option>高二</option>
+				<option>高三</option>
+			</select>
+			<label class="trSt mal10">请选择班级：</label>
+			<select class="trselect" name="">
+				<option>不限</option>
+				<option>一班</option>
+				<option>二班</option>
+				<option>三班</option>
+			</select>
+		</div>
+		<div class="selectBox">
+			<label class="trSt">请选择学生：</label>
+			<select class="trselect" name="">
+				<option>不限</option>
+				<option>一班</option>
+				<option>二班</option>
+				<option>三班</option>
+			</select>
+			<label class="trSt mal10">请选择考试：</label>
+			<select class="trselect" name="">
+				<option>不限</option>
+				<option>语文</option>
+				<option>数学</option>
+				<option>英语</option>
+			</select>
+		</div>
+		<div class="btnDiv"><a href="testContent.html" class="btnSpan">确定</a></div>
+	</div>
+	<!--right end-->
+  </div>
+</div>
+<iframe width="100%" height="150px" frameborder="0" src="../footer.html"></iframe>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>教师端教学系统-试卷管理</title>
+<link href="../default/css/trcss.css" rel="stylesheet" type="text/css" />
+<link href="../default/css/style.css" rel="stylesheet" type="text/css" />
+<link href="../default/css/popup.css" rel="stylesheet" type="text/css" />
+<script language="javascript" src="../default/js/jquery-1.3.1.js"></script>
+<script language="javascript" src="../default/js/my.js"></script>
+</head>
+<body class="b1">
+<!--head start-->
+    <iframe src="../head.html" frameborder="0" width="100%" height="151px"></iframe>
+    <!--head end-->
+<div class="teCbox">
+    <h1><img src="../default/images/mutual/ico_tit.gif"><a href="试卷管理.html" title="作业考试">作业考试</a>&nbsp;&gt;&nbsp;考试安排与批改</h1>
+  <div class="tMainBox">
+    <!--left start-->
+    <div class="trcntl">
+		<ol>
+			<li>
+				<a href="试卷管理.html" class="trcntla" title="试卷管理">试卷管理</a>
+				<div class="lineb"></div>
+			</li>
+			<li>
+				<a href="考试安排.html" class="traOk trcntla" title="考试安排与批改">考试安排与批改</a>
+				
+			</li>
+			<li>
+				<a href="作业管理.html" class="trcntla" title="作业管理">作业管理</a>
+				<div class="lineb"></div>
+			</li>
+			<li>
+				<a href="作业布置与批改.html" class="trcntla" title="作业布置与批改">作业布置与批改</a>
+				<div class="lineb"></div>
+			</li>
+		</ol>
+	</div>
+	<!--left end-->
+    <div class="trcntr">
+    <div class="testqh"><a href="考试安排.html" class="testaok">考试安排</a><a href="考试批改.html" class="testano">考试批改</a></div>
+      <div class="trSearch">
+        <label class="trSt">考试搜索：</label>
+        <input name="" type="text" class="trSinput" />
+        <input name="" type="button" class="trbtn" value="搜 索" />
+        <span class="Gtrss">︽展开高级搜索</span></div>
+      <div class="GjDiv">
+        <div class="trSearch">
+          <label class="trSt">学科：</label>
+          <p class="trSP"><span class="trSPspan">
+            <input name="" type="checkbox" value="" />
+            不限</span> <span class="trSPspan">
+            <input name="" type="checkbox" value="" />
+            语文</span> <span class="trSPspan">
+            <input name="" type="checkbox" value="" />
+            数学</span> <span class="trSPspan">
+            <input name="" type="checkbox" value="" />
+            英语</span></p>
+        </div>
+        <div class="trSearch">
+          <label class="trSt">年级：</label>
+          <p class="trSP"><span class="trSPspan">
+            <input name="" type="checkbox" value="" />
+            不限</span> <span class="trSPspan">
+            <input name="" type="checkbox" value="" />
+            高三</span> <span class="trSPspan">
+            <input name="" type="checkbox" value="" />
+            高二</span> <span class="trSPspan">
+            <input name="" type="checkbox" value="" />
+            高一</span> <span class="trSPspan">
+            <input name="" type="checkbox" value="" />
+            初三</span> <span class="trSPspan">
+            <input name="" type="checkbox" value="" />
+            初二</span> <span class="trSPspan">
+            <input name="" type="checkbox" value="" />
+            初一</span></p>
+        </div>
+        <div class="trSearch">
+          <label class="trSt">适用课程：</label>
+          <select name="" class="trselect">
+            <option>请选择适用课程</option>
+          </select>
+        </div>
+        <div class="trSearch">
+          <label class="trSt">考试状态：</label>
+          <p class="trSP"><span class="trSPspan">
+            <input name="" type="radio" value="" />
+            不限</span> <span class="trSPspan">
+            <input name="" type="radio" value="" />
+            未启用</span> <span class="trSPspan">
+            <input name="" type="radio" value="" />
+            未发布</span> <span class="trSPspan">
+            <input name="" type="radio" value="" />
+            进行中</span> <span class="trSPspan">
+            <input name="" type="radio" value="" />
+            已完成</span> </p>
+        </div>
+        <p class="trSearch textC">
+          <input name="" type="button" class="ssBtn" value="高级查询" />
+        </p>
+      </div>
+      <P class="listp width100"><a class="listbtn lb1" href="安排新考试.html">安排新考试</a></P>
+      <div class="listTaok" id="listTa0">
+        <table class="trTable" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <th>序号</th>
+            <th>考试名称</th>
+            <th>学科</th>
+            <th>考试类型</th>
+            <th>所属课程</th>
+            <th>考试群体</th>
+            <th>试卷选取</th>
+            <th>考试日期</th>
+            <th>考试状态</th>
+            <th>操作</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td class="trW"><a href="#">力学测试1</a></td>
+            <td>物理</td>
+            <td>校区统考</td>
+            <td>&nbsp;</td>
+            <td>精品1班</td>
+            <td>未选</td>
+            <td>2013-11-04</td>
+            <td>未开始</td>
+            <td><a href="#">发布</a>&nbsp;|&nbsp;<a href="#">冻结</a>&nbsp;|&nbsp;<a href="#">修订</a>&nbsp;|&nbsp;<a href="#">删除</a></td>
+          </tr>
+        </table>
+        <div class="jwcPage"><span class="jpl">共有&nbsp;
+          <label class="red">50</label>
+          &nbsp;条数据，当前第&nbsp;
+          <label class="red">1</label>
+          &nbsp;页</span><span class="jpr">
+          <label>共&nbsp;5&nbsp;页&nbsp;&nbsp;&nbsp;</label>
+          <a href="#" class="jprw">首页</a><a href="#" class="jprw">上一页</a><a href="#" class="jprsok">1</a><a href="#" class="jprs">2</a><a href="#" class="jprs">3</a><a href="#" class="jprw">下一页</a><a href="#" class="jprw">尾页</a>
+          <label>跳转</label>
+          <input name="" type="text" class="jpinp" />
+          <input name="" type="button" value="GO" class="jpgo" />
+          </span></div>
+      </div>
+    </div>
+  </div>
+  <div class="clear"></div>
+</div>
+<!--footer start-->
+    <iframe src="../footer.html" frameborder="0" width="100%" height="150px"></iframe>
+    <!--footer end-->
+</body>
+</html>

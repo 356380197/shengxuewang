@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>教师端教学系统-手动组建试卷</title>
+<link href="../default/css/trcss.css" rel="stylesheet" type="text/css" />
+<link href="../default/css/style.css" rel="stylesheet" type="text/css" />
+<script language="javascript" src="../default/js/jquery-1.3.1.js"></script>
+<script language="javascript" src="../default/js/my.js"></script>
+</head>
+<body class="b1">
+<!--head start-->
+    <iframe src="../head.html" frameborder="0" width="100%" height="151px"></iframe>
+    <!--head end-->
+<div class="teCbox">
+	 <h1><img src="../default/images/mutual/ico_tit.gif"><a href="组卷新试卷.html" title="组卷新试卷">组卷新试卷</a>&nbsp;&gt;&nbsp;手动组建试卷</h1>
+  <div class="tMainBox">
+    <!--left start-->
+    <div class="trcntl">
+		<ol>
+			<li>
+				<a href="试卷管理.html" class="traOk trcntla" title="试卷管理">试卷管理</a>
+			</li>
+			<li>
+				<a href="考试安排.html" class="trcntla" title="考试安排与批改">考试安排与批改</a>
+				<div class="lineb"></div>
+			</li>
+			<li>
+				<a href="作业管理.html" class="trcntla" title="作业管理">作业管理</a>
+				<div class="lineb"></div>
+			</li>
+			<li>
+				<a href="作业布置与批改.html" class="trcntla" title="作业布置与批改">作业布置与批改</a>
+				<div class="lineb"></div>
+			</li>
+		</ol>
+	</div>
+	<!--left end-->
+    <div class="trcntr">
+      <div class="stepDiv">
+        <p class="stepP"><span class="sSl"></span><span class="sSc">1、参数设置 </span><span class="sSr"></span></p>
+        <p class="stepP1"><span class="sSl">&nbsp;&nbsp;&nbsp;&nbsp;2、生成试卷内容</span><span class="sSr"></span></p>
+        <p class="stepP1" style="z-index:2"><span class="sSl">&nbsp;&nbsp;&nbsp;&nbsp;3、试卷内容调整</span><span class="sSr"></span></p>
+        <p class="stepP1" style="z-index:1"><span class="sSl2">&nbsp;&nbsp;&nbsp;&nbsp;4、试卷内容保存</span><span class="sSr2"></span></p>
+      </div>
+      <p class="browseCnht msty">&nbsp;&nbsp;试卷基本信息设置</p>
+      <p class="trSearch">
+        <label class="trSt">试卷名称：</label>
+        <input name="" type="text" class="trSinput" />
+      </p>
+      <p class="trSearch">
+        <label class="trSt">适用课程：</label>
+        <select name="" class="trselect">
+          <option>请选择适用课程</option>
+        </select>
+      </p>
+      <div class="trSearch">
+        <label class="trSt">学科：</label>
+        <p class="trSP"><span class="trSPspan">
+          <input name="" type="checkbox" value="" />
+          不限</span> <span class="trSPspan">
+          <input name="" type="checkbox" value="" />
+          语文</span> <span class="trSPspan">
+          <input name="" type="checkbox" value="" />
+          数学</span> <span class="trSPspan">
+          <input name="" type="checkbox" value="" />
+          英语</span></p>
+      </div>
+      <div class="trSearch">
+        <label class="trSt">适用年级：</label>
+        <p class="trSP"><span class="trSPspan">
+          <input name="" type="checkbox" value="" />
+          不限</span> <span class="trSPspan">
+          <input name="" type="checkbox" value="" />
+          高三</span> <span class="trSPspan">
+          <input name="" type="checkbox" value="" />
+          高二</span> <span class="trSPspan">
+          <input name="" type="checkbox" value="" />
+          高一</span> <span class="trSPspan">
+          <input name="" type="checkbox" value="" />
+          初三</span> <span class="trSPspan">
+          <input name="" type="checkbox" value="" />
+          初二</span> <span class="trSPspan">
+          <input name="" type="checkbox" value="" />
+          初一</span></p>
+      </div>
+      <div class="trSearch">
+        <label class="trSt">适用教材版本：</label>
+        <p class="trSP"><span class="trSPspan">
+          <input name="" type="checkbox" value="" />
+          不限</span><span class="trSPspan">
+          <input name="" type="checkbox" value="" />
+          聚智未来</span><span class="trSPspan">
+          <input name="" type="checkbox" value="" />
+          人教版</span><span class="trSPspan">
+          <input name="" type="checkbox" value="" />
+          沪科版</span><span class="trSPspan">
+          <input name="" type="checkbox" value="" />
+          北师大版</span></p>
+      </div>
+      <p class="trSearch">
+        <label class="trSt">适用课程：</label>
+        <select name="" class="trselect">
+          <option>请选择适用课程</option>
+        </select>
+      </p>
+      <div class="trSearch">
+        <label class="trSt">文理分科：</label>
+        <p class="trSP"><span class="trSPspan">
+          <input name="" type="radio" value="" />
+          通用</span><span class="trSPspan">
+          <input name="" type="radio" value="" />
+          理科试卷</span><span class="trSPspan">
+          <input name="" type="radio" value="" />
+          文科试卷</span></p>
+      </div>
+      <p class="trSearch">
+        <label class="trSt">适用地域：</label>
+        <select name="" class="trselect">
+          <option>请选择适用地域</option>
+        </select>
+      </p>
+      <p class="trSearch">
+        <label class="trSt">试卷说明：</label>
+        <textarea name="" cols="" rows="" class="textareaCss2"></textarea>
+      </p>
+      <div class="jcDiv">
+        <p class="jcDivP"> <span class="jcDivPSt">试卷难度设定</span> <span class="jcDivPSc">
+          <label class="left">
+            <input name="" type="radio" value="" />
+            &nbsp;试卷总体难度等级</label>
+          <select name="" class="trselect inptTS">
+            <option>请选择难度等级</option>
+          </select>
+          </span> <span class="jcDivPSc">
+          <label class="left">
+            <input name="" type="radio" value="" />
+            &nbsp;试卷总体难度系数</label>
+          <input name="" type="text" class="trSinput inptTS" value="输入0~1之间的数值..." />
+          </span> </p>
+        <p class="jcDivP jcDivPW"> <span class="jcDivPSt">预置作答时间</span> <span class="jcDivPSc">
+          <label class="left">时间：</label>
+          <input name="" type="text" class="trSinput inputW2" value="" style=" margin-top:8px;" />
+          <label class="left">&nbsp;&nbsp;分钟</label>
+          </span> </p>
+        <p class="jcDivP jcDivPW" style=" border-right:0px;"> <span class="jcDivPSt">满分设定</span> <span class="jcDivPSc">
+          <label class="left">满分：</label>
+          <input name="" type="text" class="trSinput inputW2" value="" style=" margin-top:8px;" />
+          <label class="left">&nbsp;&nbsp;分</label>
+          </span> </p>
+      </div>
+      <div class="clear"></div>
+      <div class="btnDiv"><a class="btnSpan" href="搜索试题.html">下一步</a><span class="btnSpan2 right">取&nbsp;&nbsp;消</span>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </div>
+  <div class="clear"></div>
+</div>
+<!--footer start-->
+    <iframe src="../footer.html" frameborder="0" width="100%" height="150px"></iframe>
+    <!--footer end-->
+</body>
+</html>

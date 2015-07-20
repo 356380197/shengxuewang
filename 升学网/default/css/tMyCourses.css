@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* ************************************ 
+* 文件名称：tMyCourses.css 
+* 作    者：于柳
+* 创建日期：2013-08-09
+* 最后修改：于柳/ 创建 / 2013-08-15 
+* 文件版本：1.0 义
+* 说    明: 我的课程
+************************************ */
+/*课程right*/
+.tMyrbox{overflow:hidden;_width:800px;}
+.tMyrbox ul li{float:left;display:inline;}
+.tMyrbox ul li a{background:url(../images/my_bj.jpg) no-repeat scroll 0 0;width:226px;height:203px;display:block;margin:0 22px;_margin:0 20px;position: relative;color:#fff;text-decoration:none;}
+.tMyrbox ul li a span{font:12px "Microsoft YaHei";position:absolute;top:92px;left:110px;}
+/***日历right****/
+.caleSty{margin-bottom:20px;}
+.caleSty h3{margin:10px 0 10px 20px;_margin:10px 0 10px 15px;}
+.caleSty h3 a{color: #0C517F;}
+.cRiliBox{background:url(../images/rili/ctop_bj.jpg) no-repeat scroll 0 0;width:755px;height:534px;*height:544px;margin:0 auto;padding:45px 10px 15px;*padding:35px 10px 15px;}
+.ctit,.intrBox,.cinforBox,.Winfor,.Winfor dl{overflow:hidden;}
+.ctit span{float:left;font:16px/36px "Microsoft YaHei";color:#999;}
+.btn_zyif{float:right;}
+.W_btn1_a,.W_btn1_a em,.W_btn2_a,.W_btn2_a em{background:url(../images/mutual/ico.png) no-repeat scroll 0 0;_background:url(../images/mutual/ico.gif) no-repeat scroll 0 0;display:inline-block;line-height:30px;;height:30px;}
+.W_btn1_a{background-position:0 0;color:#fff;}
+.W_btn1_a,.W_btn2_a{padding:0 0 0 10px;text-decoration:none;float:left;}
+.W_btn1_a em,.W_btn2_a em{font:14px "Microsoft YaHei";text-align:center;padding:0 10px 0 0;line-height:30px;min-width:50px;}
+.W_btn1_a em{background-position:right -30px;}
+.W_btn2_a{background-position:0 -90px;color:#3a4750;}
+.W_btn2_a em{background-position:right -60px;}
+.ctit p{margin:0 auto;overflow:hidden;width:200px;font:24px "Microsoft YaHei";color:#3a4750;}
+.week_s,.week_x{display:inline-block;width:13px;height:20px;vertical-align:middle;_height:10px;margin:0 15px;_margin:10px 15px 0 15px;}
+.week_s{background:url(../images/mutual/ico.png) no-repeat scroll 0 -120px;_background:url(../images/mutual/ico.gif) no-repeat scroll 0 -120px;}
+.week_x{background:url(../images/mutual/ico.png) no-repeat scroll -13px -120px;_background:url(../images/mutual/ico.gif) no-repeat scroll -13px -120px;}
+.dateBox{float:right;display:inline;font:12px "Microsoft YaHei";color:#53261f;margin-top:10px;}
+.dateBox span{width:99px;text-align:center;float:left;display:table;}
+/*table*/
+.my_caleBox{border:solid 1px #a1a1a1;background:#fff;}
+.my_caleBox td,.my_caleBox th{border: 1px dashed #e0e0e0;line-height:23px;*line-height:22px;min-height:23px;*min-height:22px;padding:0 5px;text-align:center;}
+.my_caleBox th{background:#0eb9fa;border-bottom:1px dashed #d1f2fe;color:#fff;}
+.classThen{background:#68cc68;}
+.classStay{background:#ffaa71;}
+.my_caleBox td{width:99px;}
+.sty_bot{text-align:center;float:right;}
+.sty_bot span{width:70px;height:25px;line-height:25px;display:table;float:left;margin:10px 0;}
+/***show课程***/
+.showcmain{padding:20px 0 20px 20px;_width:780px;}
+.intrBox{margin-right:20px;}
+.intrBox h3{font:14px "Microsoft YaHei";color:#1f93c6;}
+.intrBox p{color:#666;line-height:180%;margin-top:5px;}
+.intrBox p a{float:right;color:#b20000;}
+.cinforBox{margin-top:20px;}
+.cinforBox ul li{float:left;display:inline;margin:20px 20px 0 0;border:1px solid #a2b8bc;border-radius:3px 3px 3px 3px;background:#e2edf3;padding:0 25px 10px 20px;position:relative;width:329px;_width:318px;}
+.cinforBox ul li h1 a{background:url(../images/rili/infor_bj.gif) no-repeat scroll 0 0;width:86px;height:40px;display:inline-block;font:14px/40px "Microsoft YaHei";color:#fff;text-align:center;margin:0;}
+.Winfor dt{float:left;display:inline; color:#02a2ef;}
+.Winfor dl{margin-top:15px;line-height:200%;zoom:1;}
+.Winfor dd{float:left;display:inline;}
+.Winfor dd p{text-decoration:underline;}
+.showcmain .Winfor dd a{color:#b20000;background:none;display:inline;height:auto;margin:0 0 0 20px;text-align: right;text-decoration: underline;width: auto;}
+.showcmain .cinforBox ul li p a{font:14px "Microsoft YaHei";color:#cc6613;background:none;display: inline;float: right;margin:0;width: auto;height:auto;}
+.showcmain .cinforBox ul li .Winfor dl dd p a{color: #02A2EF;font:12px "宋体";line-height: 200%;text-decoration: none;margin-left: 20px;_float:none;}

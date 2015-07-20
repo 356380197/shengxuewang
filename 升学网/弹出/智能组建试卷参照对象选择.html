@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>智能组建试卷参照对象选择</title>
+<link href="../default/css/style.css" rel="stylesheet" type="text/css" />
+<link href="../default/css/popup.css" rel="stylesheet" type="text/css" />
+<script language="javascript">
+function divSH(myid,youid){
+	            if(myid=='none'){
+				var youid=document.getElementById(youid);
+				youid.style.display="none";
+				}else if(youid=='none'){
+					var myid=document.getElementById(myid);
+					myid.style.display="block";
+					}else{
+						var myid=document.getElementById(myid);
+					    myid.style.display="block";
+						var youid=document.getElementById(youid);
+				        youid.style.display="none";
+						}
+				}
+
+</script>
+</head>
+<body class="b1">
+<div style="display:" class="sns-g"></div>
+<div class="tcdiv mydiv" id="addst" style="display:block;width:700px;">
+  <div class="tcd_t">智能组建试卷参照对象选择<span onclick="divSH('none','addst')" class="close"></span></div>
+  <div class="tcd_cK">
+    <div class="tcd_c">
+		<table border="0" cellspacing="0" cellpadding="0">
+			<tbody>
+				<tr>
+					<th>年级:</th>
+					<td>
+						<span><input type="checkbox" name="" value="">高一</span>
+						<span><input type="checkbox" name="" value="">高二</span>
+						<span><input type="checkbox" name="" value="">高三</span>
+					</td>
+				</tr>
+				<tr>
+					<th>校区:</th>
+					<td>
+						<span><input type="checkbox" name="" value="">海淀第一分校</span>
+						<span><input type="checkbox" name="" value="">海淀第二分校</span>
+						<span><input type="checkbox" name="" value="">海淀第三分校</span>
+						<span><input type="checkbox" name="" value="">海淀第四分校</span>
+					</td>
+				</tr>
+				<tr>
+					<th>课程:</th>
+					<td>
+						<span><input type="checkbox" name="" value="">物理精品</span>
+						<span><input type="checkbox" name="" value="">课程物理</span>
+						<span><input type="checkbox" name="" value="">培训课程</span>
+						<span><input type="checkbox" name="" value="">物理暑期课程</span>
+						<span><input type="checkbox" name="" value="">物理短期集训课程</span>
+					</td>
+				</tr>
+				<tr>
+					<th>辅导班:</th>
+					<td>
+						<span><input type="checkbox" name="" value="" onclick="divSH('xues1','none')">一班</span>
+						<span><input type="checkbox" name="" value="" onclick="divSH('addst2','none')">二班</span>
+						<span><input type="checkbox" name="" value="" onclick="divSH('addst3','none')">三班</span>
+					</td>
+				</tr>
+				<tr>
+					<th></th>
+					<td>
+						<div class="ejstu" id="xues1">
+							<span class="close" onclick="divSH('none','xues1')" title="关闭"></span>
+							<ul>
+								<li><input type="checkbox" name="" value="">赵同学</li>
+								<li><input type="checkbox" name="" value="">赵同学</li>
+								<li><input type="checkbox" name="" value="">赵同学</li>
+								<li><input type="checkbox" name="" value="">赵同学</li>
+								<li><input type="checkbox" name="" value="">赵同学</li>
+								<li><input type="checkbox" name="" value="">赵同学</li>
+								<li><input type="checkbox" name="" value="">赵同学</li>
+								<li><input type="checkbox" name="" value="">赵同学</li>
+								<li><input type="checkbox" name="" value="">赵同学</li>
+								<li><input type="checkbox" name="" value="">赵同学</li>
+								<li><input type="checkbox" name="" value="">赵同学</li>
+								<li><input type="checkbox" name="" value="">赵同学</li>
+							</ul>
+						</div>
+						<div class="ejstu" id="xues2">
+							<span class="close" onclick="divSH('none','xues2')" title="关闭"></span>
+							<ul>
+								<li><input type="checkbox" name="" value="">李同学</li>
+								<li><input type="checkbox" name="" value="">王同学</li>
+								<li><input type="checkbox" name="" value="">于同学</li>
+								<li><input type="checkbox" name="" value="">赵同学</li>
+								<li><input type="checkbox" name="" value="">赵同学</li>
+								<li><input type="checkbox" name="" value="">赵同学</li>
+								<li><input type="checkbox" name="" value="">赵同学</li>
+								<li><input type="checkbox" name="" value="">赵同学</li>
+								<li><input type="checkbox" name="" value="">赵同学</li>
+								<li><input type="checkbox" name="" value="">赵同学</li>
+							</ul>
+						</div>
+						<div class="ejstu" id="xues3">
+							<span class="close" onclick="divSH('none','xues3')" title="关闭"></span>
+							<ul>
+								<li><input type="checkbox" name="" value="">赵同学</li>
+								<li><input type="checkbox" name="" value="">赵同学</li>
+								<li><input type="checkbox" name="" value="">消同学</li>
+								<li><input type="checkbox" name="" value="">于同学</li>
+								<li><input type="checkbox" name="" value="">金同学</li>
+								<li><input type="checkbox" name="" value="">赵同学</li>
+								<li><input type="checkbox" name="" value="">赵同学</li>
+							</ul>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

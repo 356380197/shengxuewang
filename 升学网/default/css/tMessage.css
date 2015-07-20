@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* ************************************ 
+* 文件名称：tMessage.css 
+* 作    者：于柳
+* 创建日期：2013-08-09
+* 最后修改：于柳/ 创建 / 2013-08-19 
+* 文件版本：1.0 义
+* 说    明: 消息系统,消息内容
+************************************ */
+/*bottom*/
+.delmess{float:left;}
+.botBox .delmess{float:none;}
+/*页码*/
+.pageBox{float:right;}
+/*按钮*/
+.delmess{margin:10px 20px 0 0;}
+/***消息内容**/
+.contentBox,.contentBox dl{overflow:hidden;}
+.contentBox dl dt,.contentBox dl dd{float:left;display:inline;}
+.contentBox dl dt{font:14px "Microsoft YaHei";width:150px;}
+.rbox,.rbox2{width:723px;border-color:#a2b8bc;overflow-y:auto;line-height:22px;}
+.rbox{height:198px;}
+.rbox2{height:82px;}
+.contentBox dl{margin-bottom:10px;zoom:1;}
+.botBox{width:725px;float:right;display:inline;}
+.botBox a{margin-left:10px;}
+
+
+

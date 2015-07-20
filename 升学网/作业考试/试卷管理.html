@@ -1,0 +1,625 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>教师端教学系统-试卷管理</title>
+<link href="../default/css/style.css" rel="stylesheet" type="text/css" />
+<link href="../default/css/trcss.css" rel="stylesheet" type="text/css" />
+<script language="javascript" src="../default/js/jquery-1.3.1.js"></script>
+<script language="javascript" src="../default/js/my.js"></script>
+</head>
+<!--<base target="_blank" />-->
+<body class="b1">
+	<!--head start-->
+    <iframe src="../head.html" frameborder="0" width="100%" height="151px"></iframe>
+    <!--head end-->
+<div class="teCbox">
+  <h1><img src="../default/images/mutual/ico_tit.gif"><a title="作业考试" href="试卷管理.html">作业考试</a>&nbsp;&gt;&nbsp;试卷管理</h1>
+  <div class="tMainBox">
+	<!--left start-->
+    <div class="trcntl">
+		<ol>
+			<li>
+				<a href="试卷管理.html" class="traOk trcntla" title="试卷管理">试卷管理</a>
+			</li>
+			<li>
+				<a href="考试安排.html" class="trcntla" title="考试安排与批改">考试安排与批改</a>
+				<div class="lineb"></div>
+			</li>
+			<li>
+				<a href="作业管理.html" class="trcntla" title="作业管理">作业管理</a>
+				<div class="lineb"></div>
+			</li>
+			<li>
+				<a href="作业布置与批改.html" class="trcntla" title="作业布置与批改">作业布置与批改</a>
+				<div class="lineb"></div>
+			</li>
+		</ol>
+	</div>
+	<!--left end-->
+	<!--right start-->
+    <div class="trcntr">
+		<!--搜索开始-->
+		<p class="trSearch">
+			<label class="trSt">试卷搜索：</label>
+			<input name="" type="text" class="trSinput" />
+			<input name="" type="button" class="trbtn" value="搜 索" />
+			<span class="Gtrss">︽展开高级搜索</span>
+		</p>
+		<!--搜索结束-->
+		<!--高级搜索 开始-->
+		  <div class="GjDiv">
+			<div class="trSearch">
+			  <label class="trSt">学科：</label>
+			  <p class="trSP"><span class="trSPspan">
+				<input name="" type="checkbox" value="" />
+				不限</span> <span class="trSPspan">
+				<input name="" type="checkbox" value="" />
+				语文</span> <span class="trSPspan">
+				<input name="" type="checkbox" value="" />
+				数学</span> <span class="trSPspan">
+				<input name="" type="checkbox" value="" />
+				英语</span></p>
+			</div>
+			<div class="trSearch">
+			  <label class="trSt">适用年级：</label>
+			  <p class="trSP"><span class="trSPspan">
+				<input name="" type="checkbox" value="" />
+				不限</span> <span class="trSPspan">
+				<input name="" type="checkbox" value="" />
+				高三</span> <span class="trSPspan">
+				<input name="" type="checkbox" value="" />
+				高二</span> <span class="trSPspan">
+				<input name="" type="checkbox" value="" />
+				高一</span> <span class="trSPspan">
+				<input name="" type="checkbox" value="" />
+				初三</span> <span class="trSPspan">
+				<input name="" type="checkbox" value="" />
+				初二</span> <span class="trSPspan">
+				<input name="" type="checkbox" value="" />
+				初一</span></p>
+			</div>
+			<div class="trSearch">
+			  <label class="trSt">适用教材版本：</label>
+			  <p class="trSP"><span class="trSPspan">
+				<input name="" type="checkbox" value="" />
+				不限</span> <span class="trSPspan">
+				<input name="" type="checkbox" value="" />
+				聚智未来</span> <span class="trSPspan">
+				<input name="" type="checkbox" value="" />
+				人教版</span> <span class="trSPspan">
+				<input name="" type="checkbox" value="" />
+				沪科版</span> <span class="trSPspan">
+				<input name="" type="checkbox" value="" />
+				北师大版</span></p>
+			</div>
+			<p class="trSearch">
+			  <label class="trSt">适用课程：</label>
+			  <select name="" class="trselect">
+				<option>请选择适用课程</option>
+			  </select>
+			</p>
+			<div class="trSearch">
+			  <label class="trSt">文理分科：</label>
+			  <p class="trSP"><span class="trSPspan">
+				<input name="" type="radio" value="" />
+				通用</span> <span class="trSPspan">
+				<input name="" type="radio" value="" />
+				理科试卷</span> <span class="trSPspan">
+				<input name="" type="radio" value="" />
+				文科试卷</span></p>
+			</div>
+			<div class="trSearch">
+			  <label class="trSt">试卷状态：</label>
+			  <p><span class="trSPspan">
+				<input name="" type="radio" value="" />
+				全部</span> <span class="trSPspan">
+				<input name="" type="radio" value="" />
+				已完成</span> <span class="trSPspan">
+				<input name="" type="radio" value="" />
+				未完成</span> </p>
+			</div>
+			<p class="trSearch">
+			  <label class="trSt">适用地域：</label>
+			  <select name="" class="trselect">
+				<option>请选择适用地域</option>
+			  </select>
+			</p>
+			<p class="trSearch textC">
+			  <input name="" type="button" class="ssBtn" value="高级查询" />
+			</p>
+		  </div>
+		  <!--高级搜索 结束-->
+      <P class="listp width100"><a class="listbtn lb1" href="组卷新试卷.html">组建新试卷</a><a class="listbtn lb2" href="试卷模板.html">试卷模板</a></P>
+      <!--选项卡 开始-->
+	  <div class="listTitleh"><span class="lstok" id="lst0" onclick="switchmodTag('lst','listTa',0,4)">个人试卷</span><span class="lstno" id="lst1" onclick="switchmodTag('lst','listTa',1,4)">精选试卷</span><span class="lstno" id="lst2" onclick="switchmodTag('lst','listTa',2,4)">水平诊断卷</span><span class="lstno" id="lst3" onclick="switchmodTag('lst','listTa',3,4)">教研室试卷</span></div>
+	  <!--选项卡 结束-->
+      <div class="listTaok" id="listTa0">
+        <table class="trTable" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <th><input name="" type="checkbox" value="" />全选</th>
+            <th>序号</th>
+            <th>试卷名称</th>
+            <th>试卷类型</th>
+            <th>适用课程</th>
+            <th>适用年级</th>
+            <th>更新日期</th>
+            <th>组卷人</th>
+            <th>试卷状态</th>
+            <th>操作</th>
+          </tr>
+          <tr>
+            <td><input name="" type="checkbox" value="" /></td>
+            <td></td>
+            <td class="trW"><a href="浏览试卷模板.html">数组标准测试卷</a></td>
+            <td>通用</td>
+            <td></td>
+            <td></td>
+            <td>2013-09-06</td>
+            <td></td>
+            <td><em class="nored">未完成</em></td>
+            <td><a href="#">继续组卷</a><span>|</span><a href="#">删除</a></td>
+          </tr>
+		   <tr>
+            <td><input name="" type="checkbox" value="" /></td>
+            <td></td>
+            <td class="trW"><a href="浏览试卷模板.html">数组标准测试试卷</a></td>
+            <td>理科试卷</td>
+            <td></td>
+            <td></td>
+            <td>2013-09-06</td>
+            <td></td>
+            <td><em class="nored">未完成</em></td>
+            <td><a href="#">继续组卷</a><span>|</span><a href="#">删除</a></td>
+          </tr>
+		   <tr>
+            <td><input name="" type="checkbox" value="" /></td>
+            <td></td>
+            <td class="trW"><a href="浏览试卷模板.html">方程标准测试卷</a></td>
+            <td>理科试卷</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>2013-09-06</td>
+            <td>&nbsp;</td>
+            <td>已完成</td>
+            <td><a href="#">加入精选</a><span>|</span><a href="#">继续组卷</a><span>|</span><a href="#">修订</a><span>|</span><a href="#">删除</a><span>|</span><a href="#">下载</a><span>|</span><a href="#">打印</a></td>
+          </tr>
+		   <tr>
+            <td><input name="" type="checkbox" value="" /></td>
+            <td></td>
+            <td class="trW"><a href="浏览试卷模板.html">解析几何标准测试卷</a></td>
+            <td>理科试卷</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>2013-09-06</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td><a href="#">加入精选</a><span>|</span><a href="#">继续组卷</a><span>|</span><a href="#">修订</a><span>|</span><a href="#">删除</a><span>|</span><a href="#">下载</a><span>|</span><a href="#">打印</a></td>
+          </tr>
+		   <tr>
+            <td><input name="" type="checkbox" value="" /></td>
+            <td></td>
+            <td class="trW"><a href="浏览试卷模板.html">数组标准测试试卷</a></td>
+            <td>理科试卷</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>2013-09-06</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td><a href="#">加入精选</a><span>|</span><a href="#">继续组卷</a><span>|</span><a href="#">修订</a><span>|</span><a href="#">删除</a><span>|</span><a href="#">下载</a><span>|</span><a href="#">打印</a></td>
+          </tr>
+		   <tr>
+            <td><input name="" type="checkbox" value="" /></td>
+            <td></td>
+            <td class="trW"><a href="浏览试卷模板.html">数组标准测试试卷</a></td>
+            <td>理科试卷</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>2013-09-06</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td><a href="#">加入精选</a><span>|</span><a href="#">继续组卷</a><span>|</span><a href="#">修订</a><span>|</span><a href="#">删除</a><span>|</span><a href="#">下载</a><span>|</span><a href="#">打印</a></td>
+          </tr>
+		   <tr>
+            <td><input name="" type="checkbox" value="" /></td>
+            <td></td>
+            <td class="trW"><a href="浏览试卷模板.html">数组标准测试试卷</a></td>
+            <td>理科试卷</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>2013-09-06</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td><a href="#">加入精选</a><span>|</span><a href="#">继续组卷</a><span>|</span><a href="#">修订</a><span>|</span><a href="#">删除</a><span>|</span><a href="#">下载</a><span>|</span><a href="#">打印</a></td>
+          </tr>
+        </table>
+        <div class="listbD">
+          <input name="" type="button" class="trbtn" value="加为精选试卷" />
+		  <!--页码 开始-->
+			<div class="pageBox">
+				<span>共<a href="#" title="">21</a>条记录</span>
+				<ul>
+					<li><a href="#" class="syy" title="上一页"><em></em></a></li>
+					<li><a href="#" class="syg" title="上一个"><em></em></a></li>
+					<li><a href="#" title="1" class="on">1</a></li>
+					<li><a href="#" title="2">2</a></li>
+					<li><a href="#" title="3">3</a></li>
+					<li><a href="#" title="4">4</a></li>
+					<li><a href="#" title="5">5</a></li>
+					<li><a href="#" title="6">6</a></li>
+					<li><a href="#" class="xyy" title="下一个"><em></em></a></li>
+					<li><a href="#" class="xyg" title="下一页"><em></em></a></li>
+				</ul>
+			</div>
+			<!--页码 结束-->
+        </div>
+    </div>
+	 <div class="listTano" id="listTa1">
+        <table class="trTable" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <th><input name="" type="checkbox" value="" />全选</th>
+            <th>序号</th>
+            <th>试卷名称</th>
+            <th>试卷类型</th>
+            <th>适用课程</th>
+            <th>适用年级</th>
+			 <th>适用地区</th>
+            <th>更新日期</th>
+            <th>组卷人</th>
+            <th>操作</th>
+          </tr>
+          <tr>
+            <td><input name="" type="checkbox" value="" /></td>
+            <td></td>
+            <td class="trW"><a href="浏览试卷模板.html">数组标准测试卷</a></td>
+            <td>通用</td>
+            <td></td>
+            <td></td>
+            <td><a href="#" title="">查看适用地区</a></td>
+            <td>2013-09-06</td>
+            <td></td>
+            <td><a href="#">另存试卷</a><span>|</span><a href="#">删除</a></td>
+          </tr>
+		  <tr>
+            <td><input name="" type="checkbox" value="" /></td>
+            <td></td>
+            <td class="trW"><a href="浏览试卷模板.html">数组标准测试卷</a></td>
+            <td>通用</td>
+            <td></td>
+            <td></td>
+            <td><a href="#" title="">查看适用地区</a></td>
+            <td>2013-09-06</td>
+            <td></td>
+            <td><a href="#">另存试卷</a><span>|</span><a href="#">删除</a></td>
+          </tr>
+		   <tr>
+            <td><input name="" type="checkbox" value="" /></td>
+            <td></td>
+            <td class="trW"><a href="浏览试卷模板.html">数组标准测试卷</a></td>
+            <td>通用</td>
+            <td></td>
+            <td></td>
+            <td><a href="#" title="">查看适用地区</a></td>
+            <td>2013-09-06</td>
+            <td></td>
+            <td><a href="#">另存试卷</a><span>|</span><a href="#">删除</a></td>
+          </tr>
+		   <tr>
+            <td><input name="" type="checkbox" value="" /></td>
+            <td></td>
+            <td class="trW"><a href="浏览试卷模板.html">数组标准测试卷</a></td>
+            <td>通用</td>
+            <td></td>
+            <td></td>
+            <td><a href="#" title="">查看适用地区</a></td>
+            <td>2013-09-06</td>
+            <td></td>
+            <td><a href="#">另存试卷</a><span>|</span><a href="#">删除</a></td>
+          </tr>
+		  <tr>
+            <td><input name="" type="checkbox" value="" /></td>
+            <td></td>
+            <td class="trW"><a href="浏览试卷模板.html">数组标准测试卷</a></td>
+            <td>通用</td>
+            <td></td>
+            <td></td>
+            <td><a href="#" title="">查看适用地区</a></td>
+            <td>2013-09-06</td>
+            <td></td>
+            <td><a href="#">另存试卷</a><span>|</span><a href="#">删除</a></td>
+          </tr>
+		   <tr>
+            <td><input name="" type="checkbox" value="" /></td>
+            <td></td>
+            <td class="trW"><a href="浏览试卷模板.html">数组标准测试卷</a></td>
+            <td>通用</td>
+            <td></td>
+            <td></td>
+            <td><a href="#" title="">查看适用地区</a></td>
+            <td>2013-09-06</td>
+            <td></td>
+            <td><a href="#">另存试卷</a><span>|</span><a href="#">删除</a></td>
+          </tr>
+		   <tr>
+            <td><input name="" type="checkbox" value="" /></td>
+            <td></td>
+            <td class="trW"><a href="浏览试卷模板.html">数组标准测试卷</a></td>
+            <td>通用</td>
+            <td></td>
+            <td></td>
+            <td><a href="#" title="">查看适用地区</a></td>
+            <td>2013-09-06</td>
+            <td></td>
+            <td><a href="#">另存试卷</a><span>|</span><a href="#">删除</a></td>
+          </tr>
+        </table>
+        <div class="listbD">
+          <input name="" type="button" class="trbtn" value="加为精选试卷" />
+		  <!--页码 开始-->
+			<div class="pageBox">
+				<span>共<a href="#" title="">21</a>条记录</span>
+				<ul>
+					<li><a href="#" class="syy" title="上一页"><em></em></a></li>
+					<li><a href="#" class="syg" title="上一个"><em></em></a></li>
+					<li><a href="#" title="1" class="on">1</a></li>
+					<li><a href="#" title="2">2</a></li>
+					<li><a href="#" title="3">3</a></li>
+					<li><a href="#" title="4">4</a></li>
+					<li><a href="#" title="5">5</a></li>
+					<li><a href="#" title="6">6</a></li>
+					<li><a href="#" class="xyy" title="下一个"><em></em></a></li>
+					<li><a href="#" class="xyg" title="下一页"><em></em></a></li>
+				</ul>
+			</div>
+			<!--页码 结束-->
+        </div>
+    </div>
+	<div class="listTano" id="listTa2">
+        <table class="trTable" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <th><input name="" type="checkbox" value="" />全选</th>
+            <th>序号</th>
+            <th>试卷名称</th>
+            <th>试卷类型</th>
+            <th>适用课程</th>
+            <th>适用年级</th>
+            <th>更新日期</th>
+            <th>组卷人</th>
+            <th>试卷状态</th>
+            <th>操作</th>
+          </tr>
+          <tr>
+            <td><input name="" type="checkbox" value="" /></td>
+            <td></td>
+            <td class="trW"><a href="浏览试卷模板.html">数组标准测试卷</a></td>
+            <td>通用</td>
+            <td></td>
+            <td></td>
+            <td>2013-09-06</td>
+            <td></td>
+            <td><em class="nored">审核通过</em></td>
+           <td><a href="#">提交审核</a><span>|</span><a href="#" title="">修订</a><span>|</span><a href="#">删除</a></td>
+          </tr>
+		   <tr>
+            <td><input name="" type="checkbox" value="" /></td>
+            <td></td>
+            <td class="trW"><a href="浏览试卷模板.html">数组标准测试试卷</a></td>
+            <td>理科试卷</td>
+            <td></td>
+            <td></td>
+            <td>2013-09-06</td>
+            <td></td>
+            <td><em class="nored">审核通过</em></td>
+            <td><a href="#">提交审核</a><span>|</span><a href="#" title="">修订</a><span>|</span><a href="#">删除</a></td>
+          </tr>
+		   <tr>
+            <td><input name="" type="checkbox" value="" /></td>
+            <td></td>
+            <td class="trW"><a href="浏览试卷模板.html">方程标准测试卷</a></td>
+            <td>理科试卷</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>2013-09-06</td>
+            <td>&nbsp;</td>
+            <td><em class="nored">审核通过</em></td>
+            <td><a href="#">提交审核</a><span>|</span><a href="#" title="">修订</a><span>|</span><a href="#">删除</a></td>
+          </tr>
+		   <tr>
+            <td><input name="" type="checkbox" value="" /></td>
+            <td></td>
+            <td class="trW"><a href="浏览试卷模板.html">解析几何标准测试卷</a></td>
+            <td>理科试卷</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>2013-09-06</td>
+            <td>&nbsp;</td>
+            <td><em class="nol2">二审未通过</em></td>
+            <td><a href="#">提交审核</a><span>|</span><a href="#" title="">修订</a><span>|</span><a href="#">删除</a></td>
+          </tr>
+		   <tr>
+            <td><input name="" type="checkbox" value="" /></td>
+            <td></td>
+            <td class="trW"><a href="浏览试卷模板.html">数组标准测试试卷</a></td>
+            <td>理科试卷</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>2013-09-06</td>
+            <td>&nbsp;</td>
+            <td>未提交</td>
+            <td><a href="#">提交审核</a><span>|</span><a href="#" title="">修订</a><span>|</span><a href="#">删除</a></td>
+          </tr>
+		   <tr>
+            <td><input name="" type="checkbox" value="" /></td>
+            <td></td>
+            <td class="trW"><a href="浏览试卷模板.html">数组标准测试试卷</a></td>
+            <td>理科试卷</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>2013-09-06</td>
+            <td>&nbsp;</td>
+            <td><em class="noh">审核中</em></td>
+            <td><a href="#">提交审核</a><span>|</span><a href="#" title="">修订</a><span>|</span><a href="#">删除</a></td>
+          </tr>
+		   <tr>
+            <td><input name="" type="checkbox" value="" /></td>
+            <td></td>
+            <td class="trW"><a href="浏览试卷模板.html">数组标准测试试卷</a></td>
+            <td>理科试卷</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>2013-09-06</td>
+            <td>&nbsp;</td>
+            <td><em class="nol">一审未通过</em></td>
+            <td><a href="#">提交审核</a><span>|</span><a href="#" title="">修订</a><span>|</span><a href="#">删除</a></td>
+          </tr>
+        </table>
+        <div class="listbD">
+          <input name="" type="button" class="trbtn" value="加为精选试卷" />
+		  <!--页码 开始-->
+			<div class="pageBox">
+				<span>共<a href="#" title="">21</a>条记录</span>
+				<ul>
+					<li><a href="#" class="syy" title="上一页"><em></em></a></li>
+					<li><a href="#" class="syg" title="上一个"><em></em></a></li>
+					<li><a href="#" title="1" class="on">1</a></li>
+					<li><a href="#" title="2">2</a></li>
+					<li><a href="#" title="3">3</a></li>
+					<li><a href="#" title="4">4</a></li>
+					<li><a href="#" title="5">5</a></li>
+					<li><a href="#" title="6">6</a></li>
+					<li><a href="#" class="xyy" title="下一个"><em></em></a></li>
+					<li><a href="#" class="xyg" title="下一页"><em></em></a></li>
+				</ul>
+			</div>
+			<!--页码 结束-->
+        </div>
+    </div>
+	<div class="listTano" id="listTa3">
+        <table class="trTable" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <th><input name="" type="checkbox" value="" />全选</th>
+            <th>序号</th>
+            <th>试卷名称</th>
+            <th>试卷类型</th>
+            <th>适用课程</th>
+            <th>适用年级</th>
+            <th>更新日期</th>
+            <th>组卷人</th>
+            <th>试卷状态</th>
+            <th>操作</th>
+          </tr>
+          <tr>
+            <td><input name="" type="checkbox" value="" /></td>
+            <td></td>
+            <td class="trW"><a href="浏览试卷模板.html">数组标准测试卷</a></td>
+            <td>通用</td>
+            <td></td>
+            <td></td>
+            <td>2013-09-06</td>
+            <td></td>
+            <td><em class="nored">未完成</em></td>
+            <td><a href="#">继续组卷</a><span>|</span><a href="#">删除</a></td>
+          </tr>
+		   <tr>
+            <td><input name="" type="checkbox" value="" /></td>
+            <td></td>
+            <td class="trW"><a href="浏览试卷模板.html">数组标准测试试卷</a></td>
+            <td>理科试卷</td>
+            <td></td>
+            <td></td>
+            <td>2013-09-06</td>
+            <td></td>
+            <td><em class="nored">未完成</em></td>
+            <td><a href="#">继续组卷</a><span>|</span><a href="#">删除</a></td>
+          </tr>
+		   <tr>
+            <td><input name="" type="checkbox" value="" /></td>
+            <td></td>
+            <td class="trW"><a href="浏览试卷模板.html">方程标准测试卷</a></td>
+            <td>理科试卷</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>2013-09-06</td>
+            <td>&nbsp;</td>
+            <td>已完成</td>
+            <td><a href="#">加入精选</a><span>|</span><a href="#">继续组卷</a><span>|</span><a href="#">修订</a><span>|</span><a href="#">删除</a><span>|</span><a href="#">下载</a><span>|</span><a href="#">打印</a></td>
+          </tr>
+		   <tr>
+            <td><input name="" type="checkbox" value="" /></td>
+            <td></td>
+            <td class="trW"><a href="浏览试卷模板.html">解析几何标准测试卷</a></td>
+            <td>理科试卷</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>2013-09-06</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td><a href="#">加入精选</a><span>|</span><a href="#">继续组卷</a><span>|</span><a href="#">修订</a><span>|</span><a href="#">删除</a><span>|</span><a href="#">下载</a><span>|</span><a href="#">打印</a></td>
+          </tr>
+		   <tr>
+            <td><input name="" type="checkbox" value="" /></td>
+            <td></td>
+            <td class="trW"><a href="浏览试卷模板.html">数组标准测试试卷</a></td>
+            <td>理科试卷</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>2013-09-06</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td><a href="#">加入精选</a><span>|</span><a href="#">继续组卷</a><span>|</span><a href="#">修订</a><span>|</span><a href="#">删除</a><span>|</span><a href="#">下载</a><span>|</span><a href="#">打印</a></td>
+          </tr>
+		   <tr>
+            <td><input name="" type="checkbox" value="" /></td>
+            <td></td>
+            <td class="trW"><a href="浏览试卷模板.html">数组标准测试试卷</a></td>
+            <td>理科试卷</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>2013-09-06</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td><a href="#">加入精选</a><span>|</span><a href="#">继续组卷</a><span>|</span><a href="#">修订</a><span>|</span><a href="#">删除</a><span>|</span><a href="#">下载</a><span>|</span><a href="#">打印</a></td>
+          </tr>
+		   <tr>
+            <td><input name="" type="checkbox" value="" /></td>
+            <td></td>
+            <td class="trW"><a href="浏览试卷模板.html">数组标准测试试卷</a></td>
+            <td>理科试卷</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>2013-09-06</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td><a href="#">加入精选</a><span>|</span><a href="#">继续组卷</a><span>|</span><a href="#">修订</a><span>|</span><a href="#">删除</a><span>|</span><a href="#">下载</a><span>|</span><a href="#">打印</a></td>
+          </tr>
+        </table>
+        <div class="listbD">
+          <input name="" type="button" class="trbtn" value="加为精选试卷" />
+		  <!--页码 开始-->
+			<div class="pageBox">
+				<span>共<a href="#" title="">21</a>条记录</span>
+				<ul>
+					<li><a href="#" class="syy" title="上一页"><em></em></a></li>
+					<li><a href="#" class="syg" title="上一个"><em></em></a></li>
+					<li><a href="#" title="1" class="on">1</a></li>
+					<li><a href="#" title="2">2</a></li>
+					<li><a href="#" title="3">3</a></li>
+					<li><a href="#" title="4">4</a></li>
+					<li><a href="#" title="5">5</a></li>
+					<li><a href="#" title="6">6</a></li>
+					<li><a href="#" class="xyy" title="下一个"><em></em></a></li>
+					<li><a href="#" class="xyg" title="下一页"><em></em></a></li>
+				</ul>
+			</div>
+			<!--页码 结束-->
+        </div>
+    </div>
+	<!--right end-->
+  </div>
+</div>
+</div>
+<!--footer start-->
+    <iframe src="../footer.html" frameborder="0" width="100%" height="150px"></iframe>
+    <!--footer end-->
+</body>
+</html>
